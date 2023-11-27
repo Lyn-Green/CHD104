@@ -1,0 +1,172 @@
+body {
+    width: 1920px;
+}
+.container {
+    height: 100%;
+}
+.header {
+    top: 0;
+    justify-content: center;
+    display: flex;
+    position: sticky;
+    z-index: 1;
+    /* background-color: aqua; */
+}
+
+.header .main_menu {
+    width: 1530px;
+    height: 150px;
+    /* top: 0; */
+    border: 1px solid (255, 255, 255, 0);
+    border-radius:0 0 60px 60px ;
+    background-image: linear-gradient(to bottom, rgba(231, 231, 231, 0.9), rgba(255, 255, 255, 0));
+    display: flex;
+    /* position: relative; */
+}
+
+.logo img {
+    width: 320px;
+    height: 129px;
+    margin: 5px 0 0 95px;
+    /* display: inline-block; */
+}
+.menu{
+    display: flex;
+
+}
+  
+.menu ul{
+    margin-top: 25px;
+    font-size: 24px;
+    display: flex;
+    /* background-color: #faa; */
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.menu li a{
+    width: 150px;
+    height: 100px;
+    margin:0 15px;
+    line-height: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: #2B2B2B;
+    /* background-color: #070; */
+    display: inline-block;
+}
+
+.header .button li a{
+    width: 80px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.header .button li img {
+    width: 27px;
+    height: 27xpx;
+}
+.banner {
+    width: 100%;
+    height: 1200px;
+    background: url(tiny_pic/01.front/front_banner_1920.jpg)no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+.know_about {
+    top: 1000px;
+    position: relative;
+}
+.card_aboutUs {
+    width: 1700px;
+    margin-left: 180px;
+    display: flex;
+    /* background-color: #faa; */
+}
+.card_aboutUs img{
+    width: 855px;
+    height: 650px;
+    vertical-align: bottom;
+}
+.introduce {
+    padding: 30px 120px 0 120px;
+    color: #2B2B2B ;
+    font-size: 40px;
+    font-family: 'Segoe Script','Noto Serif TC', serif;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.introduce .title {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #aaa;
+    line-height: 60px;
+}
+.introduce span {
+    color: #aaa;
+    letter-spacing: 15px;
+}
+.introduce p {
+    padding:35px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: left;
+}
+.btn_viewMore a {
+    width: 300px;
+    height: 80px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #6F7170;
+    text-decoration: none;
+    line-height: 75px;
+    letter-spacing: 0;
+    display: inline-block;
+    /* background-color: #0a0; */
+}
+.btn_viewMore img{
+    margin: 0;
+    width: 15px;
+    height: 15px;
+}
+.introduce {}
+.title {}
+.introduce .content {}
+.btn_viewMore sapn {}
+.btn_viewMore img {}
+.card_meetWith {
+    display: flex;
+}
+
+.middle_bg {
+    width: 100%;
+    height: 828px;
+    background: url(tiny_pic/01.front/front_middle_bg_1920.png)no-repeat;
+    background-size: contain;
+}
+.footer {
+    display: flex;
+    position: relative;
+}
+.footer_bg {
+    width: 100%;
+    height: 480px;
+    background: url(tiny_pic/00.header.footer/footer_bg_1920.jpg)no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.footer .wrap {
+    position: relative;
+    z-index: 2;
+}
+
+
