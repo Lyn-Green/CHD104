@@ -1,246 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>霓裳閣</title>
     <link rel="shortcut icon" href="tiny_pic/00.header.footer/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="NiShangGe-product.css">
-    <link rel="stylesheet" href="header.footer.css">
-    <link rel="stylesheet" href="btn.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/NiShangGe.css">
+    <link rel="stylesheet" href="CSS/header.footer.css">
+    <link rel="stylesheet" href="CSS/btn.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="grid.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300&display=swap');
-        
         @import url('https://fonts.cdnfonts.com/css/segoe-script');
     </style>
 </head>
-<body>
 
-<div class="header">
-    <nav class="main_menu">
-        <a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-Front.html" class="logo"><img src="tiny_pic/00.header.footer/logo_long.png" alt="NiShangGe"></a>
-        <div class="menu">
-            <ul>
-                <li>
-                    <a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-list.html#">商品總覽</a>
-                        <!-- <ul class="sub_menu">
+<body>
+    <div class="header">
+        <nav class="main_menu">
+            <a href="http://127.0.0.1:5500/NiShangGe/" class="logo"><img src="tiny_pic/00.header.footer/logo_long.png"
+                    alt="NiShangGe"></a>
+            <div class="menu">
+                <ul>
+                    <li class="menu-products-list">
+                        <a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-list.html#">商品總覽</a>
+                        <ul class="sub_menu">
                             <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
                             <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
                             <li><a href="NiShangGe-list.html#others">其他</a></li>
-                        </ul> -->
-                </li>
-                <li>
-                    <a href="#">專業訂製</a>
-                </li>
-                <li>
-                    <a href="#">關於我們</a>
-                </li>
-                <li>
-                    <a href="#">認識漢服</a>
-                </li>
-            </ul>
-            <div class="button">
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-about.html">關於品牌</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/NiShangGe/meet-with.html">認識漢服</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-contact.html">聯絡我們</a>
+                    </li>
+                </ul>
+                <div class="button">
+                    <ul>
+                        <li><a href="#"><img src="tiny_pic/07.icon/icon_search.png" alt=""></a></li>
+                        <li><a href="#"><img src="tiny_pic/07.icon/icon_member.png" alt=""></a></li>
+                        <li><a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-cart.html"><img src="tiny_pic/07.icon/icon_cart.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row" id="product-row">
+            <div class="col-2">
+                <div class="selection">
+                    <a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-list.html">
+                        <h2>全部商品</h2>
+                    </a>
+                    <a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-list.html#hanfu">
+                        <p>漢服<span> Hanfu</span></p>
+                    </a>
+                    <a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-list.html#accessory">
+                        <p>配飾<span> Accessory</span></p>
+                    </a>
+                    <a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-list.html#others">
+                        <p>其他<span> Others</span></p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="products-detail">
+                    <div class="product-img">
+                        <img src="tiny_pic/03.products/products_item_01.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <div class="info-text">
+                            <h2> 青染白綾<br> Blue-dyed White Silk<br> NT$ 4,599 </h2>
+                            <p> 以優雅綾羅材質編織而成，搭配翡翠綠色的華美。<br> 材質精緻柔軟，賦予極致舒適感，翡翠綠色散發東方風采。<br> 這漢服將您沉浸在綾羅與翡翠之美中，展現品質與風采的完美結合。
+                            </p>
+                        </div>
+                        <div class="btn-size">
+                            <label class="size">
+                                <input type="checkbox">S
+                            </label>
+                            <label class="size">
+                                <input type="checkbox">M
+                            </label>
+                            <label class="size">
+                                <input type="checkbox">L
+                            </label>
+                        </div>
+                        <div class="btn-to-cart">
+                            <a href="#">
+                                <span>加入購物車</span>
+                                <img src="tiny_pic/07.icon/icon_cart2.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-more">
+                    <div class="product-more-img">
+                        <img src="tiny_pic/03.products/products_item_02.jpg" alt="">
+                        <img src="tiny_pic/03.products/products_item_03.jpg" alt="">
+                        <img src="tiny_pic/03.products/products_item_04.jpg" alt="">
+                    </div>
+                    <div class="btn-to-next">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="popular-with">
+                    <div class="text">
+                        <h2>熱門搭配商品</h2>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <a href="#">
+                                <img src="tiny_pic/03.products/list_item_07.jpg" alt="">
+                            </a>
+                            <span>
+                                <a href="#"> 燒藍步搖流蘇簪子 |<br> Swaying Tassel Hairpin<br>
+                                </a> NT$ 980 </span>
+                        </div>
+                        <div class="card">
+                            <a href="#"><img src="tiny_pic/03.products/list_item_09.jpg" alt=""></a>
+                            <span>
+                                <a href="#"> 青漸變金鎖瓔珞背雲 |<br> Green Gradual Changing necklace<br></a> NT$ 1,280 </span>
+                        </div>
+                        <div class="card">
+                            <a href="#">
+                                <img src="tiny_pic/03.products/list_item_08.jpg" alt="">
+                            </a>
+                            <span>
+                                <a href="#"> 翠影古韻 |<br> Emerald Elegance<br>
+                                </a> NT$ 880 </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-with">
+                    <div class="text">
+                        <h2>其他熱門商品</h2>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <a href="#">
+                                <img src="tiny_pic/03.products/list_item_02.jpg" alt="">
+                            </a>
+                            <span>
+                                <a href="#"> 映日紅 |<br> Sunlit Red<br>
+                                </a> NT$ 5,999 </span>
+                        </div>
+                        <div class="card">
+                            <a href="#">
+                                <img src="tiny_pic/03.products/list_item_05.jpg" alt="">
+                            </a>
+                            <span>
+                                <a href="#"> 春色綺白 |<br> Spring Colors, Elegant White<br>
+                                </a> NT$ 3,999 </span>
+                        </div>
+                        <div class="card">
+                            <a href="#">
+                                <img src="tiny_pic/03.products/list_item_06.jpg" alt="">
+                            </a>
+                            <span>
+                                <a href="#"> 明月映影|<br> Bright Moon Reflecting Shadows<br>
+                                </a> NT$ 3,499 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_bg"></div>
+        <div class="wrap">
+            <div class="main_menu">
                 <ul>
-                    <li><a href="#"><img src="tiny_pic/07.icon/icon_search.png" alt=""></a></li>
-                    <li><a href="#"><img src="tiny_pic/07.icon/icon_member.png" alt="member"></a></li>
-                    <li><a href="#"><img src="tiny_pic/07.icon/icon_cart.png" alt="cart"></a></li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-list.html#">商品總覽</a>
+                        <ul class="sub_menu">
+                            <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
+                            <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
+                            <li><a href="NiShangGe-list.html#others">其他</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-about.html">關於品牌</a></li>
+                    <li><a href="http://127.0.0.1:5500/NiShangGe/meet-with.html">認識漢服</a></li>
                 </ul>
             </div>
-        </div>
-    </nav>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-3">
-            <div class="selection">
-                <a href="#">
-                    <h2>全部商品</h2>
-                </a>
-                <a href="#hanfu">
-                    <p>漢服<span>Hanfu</span></p>
-                </a>
-                <a href="#accessory">
-                    <p>配飾<span>Accessory</span></p>
-                </a>
-                <a href="#others">
-                    <p>其他<span>Others</span></p>
-                </a>
-            </div>
-        </div>
-        <div class="col-9">
-            <div class="products-detail">
-                <div class="product-img">
-                    <img src="tiny_pic/03.products/products_item_01.jpg" alt="">
+            <div class="logo">
+                <div class="logo_img">
+                    <a href="http://127.0.0.1:5500/NiShangGe/"><img src="tiny_pic/00.header.footer/logo_long.png"
+                            alt="NiShangGe"></a>
                 </div>
-                <div class="product-info">
-                    <div class="info-text">
-                        <h2>
-                            青染白綾<br>
-                            Blue-dyed White Silk<br>
-                            NT$ 4,599
-                        </h2>
-                        <div class="border-line"></div>
-                        <p>
-                            以優雅綾羅材質編織而成，搭配翡翠綠色的華美。
-                            材質精緻柔軟，賦予極致舒適感，翡翠綠色散發東方風采。
-                            這漢服將您沉浸在綾羅與翡翠之美中，展現品質與風采的完美結合。
-                        </p>
+                <div class="copyright">
+                    <span>本網站為TibaMe_前端設計工程師班學員專題成果作品本平台僅供學習、展示之用。</span>
+                </div>
+            </div>
+            <div class="connection">
+                <div class="connect">
+                    <div class="connect_info">
+                        <span> 聯絡我們<br> TEL: (03)425-1108<br> Email: Nishang_Studio@gmail.com</span>
                     </div>
-                    <div class="border-line"></div>
-                    <div class="style-select">
-                        <label for="size">
-                            <input type="radio" name="size">S
-                            <input type="radio" name="size">M
-                            <input type="radio" name="size">L
-                        </label>
-                    </div>
-                    <div class="border-line"></div>
-                    <div class="btn-to-cart">
-                        <span>加入購物車</span>
-                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                    <div class="connect_way">
+                        <a href="#"><img src="tiny_pic/07.icon/InstagramLogo.png" alt=""></a>
+                        <a href="#"><img src="tiny_pic/07.icon/TwitterLogo.png" alt=""></a>
+                        <a href="#"><img src="tiny_pic/07.icon/FacebookLogo.png" alt=""></a>
+                        <a href="#"><img src="tiny_pic/07.icon/LineLogo.png" alt=""></a>
+                        <a href="#"><img src="tiny_pic/07.icon/WechatLogo.png" alt=""></a>
                     </div>
                 </div>
-            </div>
-            <div class="product-more">
-                <div class="product-more-img">
-                    <img src="tiny_pic/03.products/products_item_02.jpg" alt="">
-                    <img src="tiny_pic/03.products/products_item_03.jpg" alt="">
-                    <img src="tiny_pic/03.products/products_item_04.jpg" alt="">
+                <div class="to-top">
+                    <a href="#">Page top ____</a>
                 </div>
-                <div class="btn-to-next">
-                    <img src="tiny_pic/07.icon/icon_next.png" alt="">
-                </div>
-            </div>
-            <div class="popular-with">
-                <div class="card">
-                    <img src="tiny_pic/03.products/list_item_07.jpg" alt="">
-                    <span>
-                        燒藍步搖流蘇簪子 |<br>
-                        Swaying Tassel Hairpin<br>
-                        NT$ 980
-                    </span>
-                </div>
-                <div class="card">
-                    <img src="tiny_pic/03.products/list_item_09.jpg" alt="">
-                    <span>
-                        青漸變金鎖瓔珞背雲 |<br>
-                        Green Gradual Changing necklace<br>
-                        NT$ 1,280
-                    </span>
-                </div>
-                <div class="card">
-                    <img src="tiny_pic/03.products/list_item_08.jpg" alt="">
-                    <span>
-                        翠影古韻 |<br>
-                        Emerald Elegance<br>
-                        NT$ 880
-                    </span>
-                </div>
-            </div>
-            <div class="popular-products">
-                <div class="card">
-                    <img src="tiny_pic/03.products/list_item_02.jpg" alt="">
-                    <span>
-                        映日紅 |<br>
-                        Sunlit Red<br>
-                        NT$ 5,999
-                    </span>
-                </div>
-                <div class="card">
-                    <img src="tiny_pic/03.products/list_item_05.jpg" alt="">
-                    <span>
-                        春色綺白 |<br>
-                        Spring Colors, Elegant White<br>
-                        NT$ 3,999
-                    </span>
-                </div>
-                <div class="card">
-                    <img src="tiny_pic/03.products/list_item_06.jpg" alt="">
-                    <span>
-                        明月映影|<br>
-                        Bright Moon Reflecting Shadows<br>
-                        NT$ 3,499
-                    </span>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-    </div>
-</div>
-
-
-
-
-<div class="footer">
-    <div class="footer_bg"></div>
-    <div class="wrap">
-        <div class="main_menu">
-            <ul>
-                <li>
-                    <a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-list.html#">商品總覽</a>
-                    <ul class="sub_menu">
-                        <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
-                        <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
-                        <li><a href="NiShangGe-list.html#others">其他</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">認識漢服</a></li>
-                <li><a href="#">關於我們</a></li>
-            </ul>
-        </div>
-        <div class="logo">
-            <div class="logo_img">
-                <a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-Front.html"><img src="tiny_pic/00.header.footer/logo_long.png" alt="NiShangGe"></a>
-            </div>
-            <div class="copyright">
-                <span>Copyright ©NiShangGe Studio Co., Ltd. All rights reserved.</span>
-            </div>
-        </div>
-        <div class="connection">
-            <div class="connect">
-                <div class="connect_info">
-                    <span>
-                        聯絡我們<br>
-                        TEL: +886-(0)993-83-2851<br>
-                        Email: Nishangge_HanfuStudio@gmail.com
-                    </span>
-                </div>
-                <div class="connect_way">
-                    <a href="#"><img src="tiny_pic/07.icon/InstagramLogo.png" alt=""></a>
-                    <a href="#"><img src="tiny_pic/07.icon/TwitterLogo.png" alt=""></a>
-                    <a href="#"><img src="tiny_pic/07.icon/FacebookLogo.png" alt=""></a>
-                    <a href="#"><img src="tiny_pic/07.icon/LineLogo.png" alt=""></a>
-                    <a href="#"><img src="tiny_pic/07.icon/WechatLogo.png" alt=""></a>
-                </div>
-            </div>
-            <div class="to-top">
-                <a href="#">Page top ____</a>
             </div>
         </div>
     </div>
-</div>
-
-
-
-
 </body>
+
 </html>
