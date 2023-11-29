@@ -111,13 +111,13 @@
   /* z-index: -; */
 }
 
-.footer_bg {
+.footer_bg img{
   width: 100%;
   height: 611px;
-  background-image: url("/NiShangGe/tiny_pic/00.header.footer/footer_bg_1920_v2.png")no-repeat;
-  background-size: contain;
+  /* background-image: url("/NiShangGe/tiny_pic/00.header.footer/footer_bg_1920_v2.png")no-repeat; */
+  /* background-size: contain; */
   position: absolute;
-  z-index: 1;
+  z-index: 0;
 }
 
 .footer .wrap {
