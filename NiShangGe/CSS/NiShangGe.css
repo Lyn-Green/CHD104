@@ -817,21 +817,21 @@ body {
     /* background-color: #C3998B; */
 }
 
-.cart-bg {
-    width: 100%;
-    height: 30%;
-    background: url("/NiShangGe/tiny_pic/04.cart/cart_header_bg_01.png")no-repeat;
+.cart-bg img{
+    width: 616px;
+    /* height: ; */
+    /* background: url("/NiShangGe/tiny_pic/04.cart/cart_header_bg_01.png")no-repeat; */
     /* background-color: #aaa; */
     position: absolute;
     left: 0;
     top: 180px;
     z-index: -1;
 }
-.cart-bg-2 {
+.cart-bg-2 img{
     width: 316px;
     height: 505px;
-    background: url("/NiShangGe/tiny_pic/04.cart/cart_header_bg_02.png")no-repeat;
-    background-size: contain;
+    /* background: url("/NiShangGe/tiny_pic/04.cart/cart_header_bg_02.png")no-repeat; */
+    /* background-size: contain; */
     /* background-color: #aaa; */
     position: absolute;
     right:130px;
