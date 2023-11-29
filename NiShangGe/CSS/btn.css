@@ -1,0 +1,227 @@
+.btn_viewMore a {
+  width: 300px;
+  height: 80px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #6F7170;
+  text-decoration: none;
+  text-align: center;
+  line-height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: 1s ;
+  /* background-color: #0a0; */
+}
+.btn_viewMore a:hover {
+  border-radius: 50px 0 50px 0;
+  color: #F8F8F8;
+  background-color: #2B2B2B;
+}
+
+.btn_viewMore img{
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+}
+
+.btn_shop a {
+  width: 300px;
+  height: 80px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #6F7170;
+  text-decoration: none;
+  text-align: center;
+  line-height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: 1s ;
+  /* background-color: #0a0; */
+}
+.btn_shop a:hover {
+  border-radius: 50px 0 50px 0;
+  color: #F8F8F8;
+  background-color: #2B2B2B;
+}
+.btn_shop img{
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+}
+
+/* ==================商品介紹===================== */
+
+.btn-size {
+  display: flex;
+  /* background-color: #faa; */
+  margin-left: 30px;
+  /* padding-right: 100px; */
+  /* margin-right: auto; */
+}
+.btn-size .size{
+  font-size: 24px;
+  /* font-family: 'Noto Serif TC', serif; */
+  width: 60px;
+  height: 60px;
+  border: 2px solid #999;
+  margin: 50px 40px 50px 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  /* background-color: #faa; */
+}
+.btn-size .size:hover {
+  border: 2px solid #d00;
+  color: #d00;
+}
+.btn-size input[type=checkbox] {
+  display: none;
+}
+
+
+.btn-to-cart a{
+  width: 300px;
+  height: 80px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-decoration: none;
+  color: #F8F8F8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #6F7170;
+  transition: 1s ;
+}
+.btn-to-cart a:hover {
+  border-radius: 50px 0 50px 0;
+  background-color: #2B2B2B;
+}
+.btn-to-cart img {
+  width: 19.75px;
+  height: 17.5px;
+  margin-left: 5px;
+}
+
+.btn-to-next {
+  width: 100px;
+  height: 200px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .9s ;
+  /* background-color: #fff; */
+}
+.btn-to-next i {
+  font-size: 50px;
+  color: #aaa;
+}
+.btn-to-next:hover {
+  width: 126px;
+  background-color: #2b2b2b;
+  border: none;
+}
+.btn-to-next:hover i {
+  color: #ddd;
+}
+/* ======================購物車====================== */
+
+.btn-trash i {
+  color: #555;
+  font-size: 30px;
+  padding-bottom: 10px;
+  }
+
+.btn-count {
+  width: 180px;
+  display: flex;
+  background-color: #ddd;
+  border-radius: 5px;
+
+  .box {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    color: #2B2B2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box:nth-child(2) {
+    background-color:#f8f8f8;
+  }
+
+}
+
+.btn-pay a {
+  width: 300px;
+  height: 80px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #F8F8F8;
+  text-decoration: none;
+  text-align: center;
+  line-height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: 1s ;
+  background-color: #6F7170;
+}
+.btn-pay a:hover {
+  border-radius: 50px 0 50px 0;
+  color: #F8F8F8;
+  background-color: #2B2B2B;
+}
+
+
+
+.btn-contact-us a {
+  width: 300px;
+  height: 80px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #6F7170;
+  text-decoration: none;
+  text-align: center;
+  line-height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: 1s ;
+  /* background-color: #0a0; */
+}
+.btn-contact-us a:hover {
+  border-radius: 50px 0 50px 0;
+  color: #F8F8F8;
+  background-color: #2B2B2B;
+}
+
+.btn-send a {
+  width: 300px;
+  height: 80px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #F8F8F8;
+  text-decoration: none;
+  text-align: center;
+  line-height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: 1s ;
+  background-color: #6F7170;
+}
+.btn-send a:hover {
+  border-radius: 50px 0 50px 0;
+  color: #F8F8F8;
+  background-color: #2B2B2B;
+}
