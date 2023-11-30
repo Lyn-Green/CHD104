@@ -528,13 +528,19 @@ body {
         padding-top: 50%;
         top: 0;
         position: sticky;
+        
         /* background-color: #070; */
     }
 
     .selection a {
-        text-decoration: none;
+        text-decoration-color: #f000;
         line-height: 70px;
         color: #2B2B2B;
+        transition: 0.8s;
+        
+    }
+    .selection a:hover {
+        text-decoration-color: #aaa;
     }
 
     .selection h2 {
@@ -626,9 +632,13 @@ body {
         }
 
         .item-text a {
-            text-decoration: none;
+            text-decoration-color: #f000;
             font-size: 20px;
             color: #2B2B2B;
+            transition: 0.8s;
+        }
+        .item-text a:hover {
+            text-decoration-color: #aaa;
         }
 
     }
@@ -651,10 +661,13 @@ body {
 }
 
 .selection a {
-    color: #000;
+    color: #2B2B2B;
     font-family: 'Noto Serif TC', serif;
-    text-decoration: none;
-
+    text-decoration-color: #f000;
+    transition: .8s;
+}
+.selection a:hover {
+    text-decoration-color: #aaa;
 }
 
 .selection a span {
@@ -783,9 +796,12 @@ body {
 
     .card span a {
         color: #2B2B2B;
-        text-decoration: none;
+        text-decoration-color: #f000;
         /* background-color: #faa; */
-
+        transition: .8s;
+    }
+    .card span a:hover {
+        text-decoration-color: #aaa;
     }
 }
 
