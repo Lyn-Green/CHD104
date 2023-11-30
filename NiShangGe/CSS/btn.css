@@ -205,7 +205,7 @@
   background-color: #2B2B2B;
 }
 
-.btn-send a {
+/* .btn-send a {
   width: 300px;
   height: 80px;
   border: 1px solid #bbb;
@@ -221,6 +221,26 @@
   background-color: #6F7170;
 }
 .btn-send a:hover {
+  border-radius: 50px 0 50px 0;
+  color: #F8F8F8;
+  background-color: #2B2B2B;
+} */
+.btn-send input {
+  width: 300px;
+  height: 80px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #F8F8F8;
+  text-decoration: none;
+  text-align: center;
+  line-height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: 1s ;
+  background-color: #6F7170;
+}
+.btn-send input:hover {
   border-radius: 50px 0 50px 0;
   color: #F8F8F8;
   background-color: #2B2B2B;
