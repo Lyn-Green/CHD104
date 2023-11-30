@@ -219,7 +219,7 @@ body {
     bottom: 100px;
     /* top: 1600px; */
     top: 2550px;
-    /* background: url("tiny_pic/01.front/front_middle_bg_1920.png")no-repeat; */
+    background: url("../tiny_pic/01.front/front_middle_bg_1920v3.png")no-repeat;
     background-attachment: fixed;
     background-size: contain;
     position: absolute;
