@@ -222,9 +222,9 @@ body {
     background: url("../tiny_pic/01.front/front_middle_bg_1920v3.png")no-repeat;
     /* background-image: url("../tiny_pic/01.front/front_middle_bg_1920v3.png")no-repeat; */
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
-    z-index: 1;
+    z-index: -1;
 }
 
 /* newArrivals==================================== */
