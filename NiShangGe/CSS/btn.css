@@ -161,7 +161,7 @@
 
 }
 
-.btn-pay a {
+.btn-pay input {
   width: 300px;
   height: 80px;
   border: 1px solid #bbb;
@@ -176,7 +176,7 @@
   transition: 1s ;
   background-color: #6F7170;
 }
-.btn-pay a:hover {
+.btn-pay input:hover {
   border-radius: 50px 0 50px 0;
   color: #F8F8F8;
   background-color: #2B2B2B;
