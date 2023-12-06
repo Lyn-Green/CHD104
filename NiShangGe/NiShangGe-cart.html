@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Noto+Serif+TC:wght@300;400;500&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
         @import url('https://fonts.cdnfonts.com/css/segoe-script');
     </style>
 </head>
@@ -54,7 +54,7 @@
             </div>
         </nav>
     </div>
-    <div class="container">
+    <div class="container" id="cart-container">
         <div class="cart-title">
             <h1>購物車</h1>
             <div class="cart-bg"><img src="tiny_pic/04.cart/cart_header_bg_01.png" alt=""></div>
@@ -72,11 +72,15 @@
                                 <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-product.html">
                                     <h2> 青染白綾 |<br> Blue-dyed White Silk </h2>
                                 </a>
-                                <span>NT$ 4,599</span>
                             </div>
                             <div class="cart-btn">
+                                <select name="size" id="">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                </select>
                                 <div class="btn-count">
-                                    <div class="box">+</div>
+                                    <div class="box">-</div>
                                     <div class="box">1</div>
                                     <div class="box">+</div>
                                 </div>
@@ -84,6 +88,7 @@
                                     <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                 </div>
                             </div>
+                            <span>NT$ 4,599</span>
                         </div>
                     </div>
                     <div class="cart-item">
@@ -95,11 +100,15 @@
                                 <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-product.html">
                                     <h2> 映日紅 |<br> Sunlit Red </h2>
                                 </a>
-                                <span>NT$ 5,999</span>
                             </div>
                             <div class="cart-btn">
+                                <select name="size" id="">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                </select>
                                 <div class="btn-count">
-                                    <div class="box">+</div>
+                                    <div class="box">-</div>
                                     <div class="box">1</div>
                                     <div class="box">+</div>
                                 </div>
@@ -107,6 +116,7 @@
                                     <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                 </div>
                             </div>
+                            <span>NT$ 5,999</span>
                         </div>
                     </div>
                     <div class="cart-item">
@@ -118,11 +128,15 @@
                                 <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-product.html">
                                     <h2> 翠影古韻 |<br> Emerald Elegance </h2>
                                 </a>
-                                <span>NT$ 880</span>
                             </div>
                             <div class="cart-btn">
+                                <select name="size" id="">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                </select>
                                 <div class="btn-count">
-                                    <div class="box">+</div>
+                                    <div class="box">-</div>
                                     <div class="box">1</div>
                                     <div class="box">+</div>
                                 </div>
@@ -130,6 +144,7 @@
                                     <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                 </div>
                             </div>
+                            <span>NT$ 880</span>
                         </div>
                     </div>
                     <div class="cart-item">
@@ -141,11 +156,15 @@
                                 <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-product.html">
                                     <h2> 燒藍步搖流蘇簪子 |<br>Swaying Tassel Hairpin </h2>
                                 </a>
-                                <span>NT$ 980</span>
                             </div>
                             <div class="cart-btn">
+                                <select name="size" id="">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                </select>
                                 <div class="btn-count">
-                                    <div class="box">+</div>
+                                    <div class="box">-</div>
                                     <div class="box">1</div>
                                     <div class="box">+</div>
                                 </div>
@@ -153,6 +172,7 @@
                                     <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                 </div>
                             </div>
+                            <span>NT$ 980</span>
                         </div>
                     </div>
                 </div>
@@ -203,7 +223,7 @@
                             </div>
                             <div class="text">
                                 <a href="#">
-                                    <h2> 青漸變金鎖瓔珞背雲 |<br> Green Gradual Changing necklace</h2>
+                                    <h2> 青漸變金鎖瓔珞背雲 |<br> <span>Green Gradual Changing necklace</span></h2>
                                 </a>
                                 <span>NT$ 1,280</span>
                             </div>
@@ -212,7 +232,7 @@
                             <div class="card-pic"><a href="#"><img src="tiny_pic/04.cart/list_item_03.jpg" alt=""></a></div>
                             <div class="text">
                                 <a href="#">
-                                    <h2> 玄燭 |<br> Mysterious Candle</h2>
+                                    <h2> 玄燭 |<br> <span>Mysterious Candle</span></h2>
                                 </a>
                                 <span>NT$ 6,299</span>
                             </div>
@@ -221,7 +241,7 @@
                             <div class="card-pic"><a href="#"><img src="tiny_pic/04.cart/list_item_05.jpg" alt=""></a></div>
                             <div class="text">
                                 <a href="#">
-                                    <h2> 春色綺白 |<br> Spring Colors, Elegant White</h2>
+                                    <h2> 春色綺白 |<br> <span>Spring Colors, Elegant White</span></h2>
                                 </a>
                                 <span>NT$ 3,999</span>
                             </div>
@@ -232,7 +252,7 @@
                             </div>
                             <div class="text">
                                 <a href="#">
-                                    <h2> 明月映影 |<br> Bright Moon Reflecting Shadows</h2>
+                                    <h2> 明月映影 |<br> <span>Bright Moon Reflecting Shadows</span></h2>
                                 </a>
                                 <span>NT$ 3,499</span>
                             </div>
@@ -243,7 +263,7 @@
         </div>
     </div>
     <div class="footer">
-        <div class="footer_bg"><img src="tiny_pic/00.header.footer/footer_bg_1920_v2.png" alt=""></div>
+        <div class="footer_bg"></div>
         <div class="wrap">
             <div class="main_menu">
                 <ul>
@@ -265,7 +285,10 @@
                             alt="NiShangGe"></a>
                 </div>
                 <div class="copyright">
-                    <span>本網站為TibaMe_前端設計工程師班學員專題成果作品本平台僅供學習、展示之用。</span>
+                    <span>
+                        Copyright ©NiShangGe Studio Co., Ltd. All rights reserved. <br>
+                        本網站為TibaMe_前端設計工程師班學員專題成果作品本平台僅供學習、展示之用。
+                    </span>
                 </div>
             </div>
             <div class="connection">
@@ -282,7 +305,7 @@
                     </div>
                 </div>
                 <div class="to-top">
-                    <a href="#">Page top ____</a>
+                    <a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
