@@ -1,3 +1,5 @@
+/* font-family: 'Nunito Sans', 'Noto Serif TC',sans-serif; */
+/* font-family: 'Karla', 'Noto Serif TC',sans-serif; */
 .btn_viewMore a {
   width: 300px;
   height: 80px;
@@ -10,7 +12,7 @@
   line-height: 80px;
   display: inline-block;
   vertical-align: middle;
-  transition: 1s ;
+  transition: .5s ;
   /* background-color: #0a0; */
 }
 .btn_viewMore a:hover {
@@ -38,7 +40,7 @@
   line-height: 80px;
   display: inline-block;
   vertical-align: middle;
-  transition: 1s ;
+  transition: .5s ;
   /* background-color: #0a0; */
 }
 .btn_shop a:hover {
@@ -73,7 +75,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 1s;
+  transition: .5s;
   /* background-color: #faa; */
 }
 .btn-size .size:hover {
@@ -97,7 +99,7 @@
   justify-content: center;
   border-radius: 5px;
   background-color: #6F7170;
-  transition: 1s ;
+  transition: .5s ;
 }
 .btn-to-cart a:hover {
   border-radius: 50px 0 50px 0;
@@ -106,7 +108,7 @@
 .btn-to-cart img {
   width: 19.75px;
   height: 17.5px;
-  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .btn-to-next {
@@ -116,7 +118,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: .9s ;
+  transition: .5s ;
   /* background-color: #fff; */
 }
 .btn-to-next i {
@@ -132,11 +134,25 @@
   color: #ddd;
 }
 /* ======================購物車====================== */
-
+.cart-btn select {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+/* .cart-btn option {
+  display: inline-block;
+  padding: 50px;
+  margin-bottom  : 50px;
+  background-color: #faa;
+} */
 .btn-trash i {
   color: #555;
   font-size: 30px;
-  padding-bottom: 10px;
+  padding:0 0 0 250px;
   }
 
 .btn-count {
@@ -173,7 +189,7 @@
   line-height: 80px;
   display: inline-block;
   vertical-align: middle;
-  transition: 1s ;
+  transition: .5s ;
   background-color: #6F7170;
 }
 .btn-pay input:hover {
@@ -183,7 +199,7 @@
 }
 
 
-
+/* ========聯絡我們=============== */
 .btn-contact-us a {
   width: 300px;
   height: 80px;
@@ -196,7 +212,7 @@
   line-height: 80px;
   display: inline-block;
   vertical-align: middle;
-  transition: 1s ;
+  transition: .5s ;
   /* background-color: #0a0; */
 }
 .btn-contact-us a:hover {
@@ -237,7 +253,7 @@
   line-height: 80px;
   display: inline-block;
   vertical-align: middle;
-  transition: 1s ;
+  transition: .5s ;
   background-color: #6F7170;
 }
 .btn-send input:hover {

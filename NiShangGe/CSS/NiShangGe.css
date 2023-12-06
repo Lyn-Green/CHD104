@@ -238,6 +238,8 @@ body {
     justify-content: space-evenly;
     /* position: relative; */
     z-index: 3;
+    font-family: 'Karla', 'Noto Serif TC',sans-serif;
+    font-weight: 300;
     /* background-color: #000; */
 }
 
@@ -308,7 +310,7 @@ body {
 }
 
 .card-product img {
-    transition: 1s;
+    transition: .5s;
 }
 
 
@@ -342,105 +344,6 @@ body {
     margin: -20px 0 0 -80px;
 }
 
-/* footer======================================= */
-.footer {
-    max-width: 1920px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.footer_bg {
-    width: 100%;
-    height: 611px;
-    background: url("tiny_pic/00.header.footer/footer_bg_1920_v2.png")no-repeat;
-    background-size: contain;
-    position: absolute;
-    z-index: 1;
-}
-
-.footer .wrap {
-    width: 90%;
-    font-size: 20px;
-    color: #888;
-    font-weight: bold;
-    display: flex;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 2;
-    /* background-color: #fa0; */
-}
-
-.footer .main_menu {
-    width: 30%;
-    margin: 16% 0 0 5%;
-    font-size: 20px;
-    /* background-color: #faa; */
-}
-
-.footer .main_menu ul {
-    display: flex;
-    justify-content: space-evenly;
-    letter-spacing: 1px;
-    line-height: 30px;
-}
-
-.footer .main_menu a {
-    text-decoration: none;
-    /* font-weight: bold; */
-    color: #888;
-}
-
-.footer .main_menu ul .sub_menu {
-    margin-top: 10px;
-    line-height: 35px;
-    flex-direction: column;
-}
-
-.footer .logo {
-    width: 40%;
-    margin-top: 11%;
-    text-align: center;
-    /* background-color: #070; */
-}
-
-.footer .logo span {
-    margin-left: 12%;
-    font-size: 16px;
-}
-
-.footer .connection {
-    width: 30%;
-    padding-left: 50px;
-    margin-top: 12%;
-    line-height: 40px;
-    display: flex;
-    justify-content: space-between;
-    /* background-color: #95B3CB; */
-}
-
-.footer .connect_way {
-    margin-top: 30px;
-}
-
-.footer .connect_way a {
-    margin-right: 30px;
-}
-
-.to-top a {
-    width: 150px;
-    height: 50px;
-    top: 80px;
-    left: 80px;
-    color: #2B2B2B;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    position: relative;
-    transform: rotate(90deg);
-    /* background-color: #fa0; */
-}
 
 /* ====================商品總覽====================== */
 
@@ -519,7 +422,7 @@ body {
     width: 30%;
     display: flex;
     justify-content: center;
-    font-family: 'Noto Serif TC', serif;
+    font-family: 'Karla', 'Noto Serif TC',sans-serif;
     /* background-color: #faa; */
 
     .selection {
@@ -527,17 +430,22 @@ body {
         height: 15%;
         padding-top: 50%;
         top: 0;
-        position: sticky;
-        
+        position: sticky; 
         /* background-color: #070; */
     }
 
     .selection a {
+        display: flex;
+        align-items: center;
         text-decoration-color: #f000;
         line-height: 70px;
         color: #2B2B2B;
-        transition: 0.8s;
+        font-weight: 200;
+        transition: .5s;
         
+    }
+    .selection a img {
+        margin-right: 10px;
     }
     .selection a:hover {
         text-decoration-color: #aaa;
@@ -553,14 +461,16 @@ body {
 
     .selection span {
         font-size: 20px;
+        font-weight: 400;
     }
 
 
 }
 
 .product-list {
+    margin-left: -50px;
     width: 70%;
-    font-family: 'Noto Serif TC', serif;
+    font-family: 'Karla', 'Noto Serif TC',sans-serif;
 
     .card-products {
         display: flex;
@@ -592,10 +502,12 @@ body {
             letter-spacing: 5%;
             line-height: 40px;
             margin-bottom: 30px;
+            padding-left: 20px;
         }
 
         .card-items {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             column-gap: 30px;
             /* padding-top: 30px; */
@@ -614,7 +526,7 @@ body {
         .item-img img {
             border-radius: 5px;
             transform: scale(1, 1);
-            transition: all .8s ease-out;
+            transition: all .5s ease-out;
         }
 
         .item-img img:hover {
@@ -628,17 +540,19 @@ body {
             border-top: 1px solid #aaa;
             padding: 10px 0 0 10px;
             margin-top: 10px;
-            ;
         }
 
         .item-text a {
             text-decoration-color: #f000;
             font-size: 20px;
             color: #2B2B2B;
-            transition: 0.8s;
+            transition: .5s;
         }
         .item-text a:hover {
             text-decoration-color: #aaa;
+        }
+        .item-text span {
+            font-size: 1.1em;
         }
 
     }
@@ -651,27 +565,56 @@ body {
 .col-2 .selection {
     width: 100%;
     padding-top: 100px;
-    margin: auto;
+    margin-left: -40px;
     top: 180px;
     font-size: 24px;
     line-height: 54px;
     position: sticky;
+    z-index: 1;
     /* background-color: #faa; */
-
+    font-family: 'Karla', 'Noto Serif TC',sans-serif;
 }
 
 .selection a {
-    color: #2B2B2B;
-    font-family: 'Noto Serif TC', serif;
+    display: flex;
+    align-items: center;
     text-decoration-color: #f000;
-    transition: .8s;
+    color: #2B2B2B;
+    line-height: 70px;
+    font-weight: 200;
+    transition: .5s;
+}
+.selection a img {
+    margin-right: 10px;
+    
 }
 .selection a:hover {
     text-decoration-color: #aaa;
 }
 
+.selection a #img-hover {
+    display: none;
+    transition: opacity 0.5s;
+}
+.selection a:hover #normal-img {
+    display: none;
+    opacity: 0;
+}
+.selection a:hover #img-hover {
+    display: block;
+    opacity: 1;
+}
+
+.selection h2 {
+    font-size: 32px;
+}
+
+.selection p {
+    font-size: 24px;
+}
 .selection a span {
-    font-size: 1.5ex;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .col-10 {
@@ -681,7 +624,7 @@ body {
 
 .products-detail {
     display: flex;
-    font-family: 'Noto Serif TC', serif;
+    font-family: 'Karla', 'Noto Serif TC',sans-serif;
 
     .product-img img {
         width: 100%;
@@ -726,7 +669,7 @@ body {
     width: 70%;
     height: 235px;
     display: flex;
-    margin: -80px 0 50px 0;
+    margin: -30px 0 50px 0;
     position: relative;
 
     /* background-color: #faa。; */
@@ -745,7 +688,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    font-family: 'Noto Serif TC', serif;
+    font-family: 'Karla', 'Noto Serif TC',sans-serif;
     position: relative;
     z-index: 2;
     /* background-color: #faa; */
@@ -767,7 +710,7 @@ body {
     .card {
         width: 30%;
         line-height: 40px;
-        font-size: 24px;
+        font-size: 22px;
         display: flex;
         flex-direction: column;
     }
@@ -780,36 +723,41 @@ body {
         width: 100%;
         border-radius: 5px;
         transform: scale(1, 1);
-        transition: all .8s ease-out;
+        transition: all .5s ease-out;
     }
 
     .card img:hover {
         transform: scale(1.1);
     }
 
-    .card span {
+    .card .product-name {
         border-top: 1px solid #aaa;
         margin-top: 20px;
         padding-top: 20px;
         /* background-color: #faa; */
     }
 
-    .card span a {
+    .card .product-name a {
+        font-size: 20px;
         color: #2B2B2B;
         text-decoration-color: #f000;
         /* background-color: #faa; */
-        transition: .8s;
+        transition: .5s;
     }
-    .card span a:hover {
+    .card .product-name a:hover {
         text-decoration-color: #aaa;
+    }
+    .card .product-name a span {
+        font-size: 22px;
     }
 }
 
 
 /* ===============購物車=================== */
 
-#cart-row {
-    
+#cart-container {
+    font-family: 'Karla', 'Noto Serif TC',sans-serif;
+    font-weight: 300;
     /* background-color: red; */
 }
 
@@ -827,7 +775,6 @@ body {
     font-size: 44px;
     /* font-weight: bold; */
     color: #555;
-    font-family: 'Noto Serif TC', serif;
     text-align: center;
     margin: 100px auto 100px ;
     
@@ -873,10 +820,11 @@ body {
 
         .cart-detail {
             margin-left: 50px;
-        }
-        .text {
             font-size: 24px;
             line-height: 50px;
+        }
+        .text {
+            
             margin: 10px 0 0 10px;
             /* background-color: #faa; */
             
@@ -884,21 +832,23 @@ body {
         .text a {
             color: #2B2B2B;
             text-decoration-color: #f000;
-            transition: .8s;
+            transition: .5s;
         }
         .text a:hover {
             text-decoration-color: #aaa ;
         }
         
         .cart-btn {
-            width: 250px;
-            margin-top: 40px;
+            /* width: 250px; */
+            margin: 30px 0 30px 0;
             display: flex;
             justify-content: space-between;
             align-items: end;
             /* background-color: #faa; */
         }
+        .cart-detail span {
 
+        }
 
 
 
@@ -930,7 +880,6 @@ body {
         margin-top: 90px;
         margin-bottom: 80px;
         font-size: 22px;
-        font-family: 'Noto Serif TC', serif;
         display: flex;
         flex-direction: column;
         
@@ -969,22 +918,29 @@ body {
     margin-left: 5px;
 }
 
+#you-may-like {
+    width: 100%;    
+    /* background-color: #aaa; */
+}
 .cart-cards {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 100px 0 50px 0;
-    font-family: 'Noto Serif TC', serif;
+    font-family: 'Karla', 'Noto Serif TC',sans-serif;
+    font-weight: 300;
     /* background-color: #faa; */
 
     .title {
         width: 100%;
         padding-bottom: 15px;
-        margin-left: -80px;
+        /* margin-left: -80px; */
+        /* padding-right: 100px; */
         border-bottom: 1px solid #aaa;
-        font-size: 32px;
+        font-size: 28px;
         /* background-color: #070; */
+        position: relative;
         
     }
     
@@ -1001,25 +957,28 @@ body {
             width: 100%;
             margin: 0 5px 0 5px;
             
-            
-
             .text {
                 /* width: 95%; */
                 border-top: 1px solid #aaa;
                 padding-top: 10px;
                 margin-top: 10px;
-                font-size: 24px;
+                font-size: 22px;
                 line-height: 35px;
+            }
+
+            .text span {
+                font-size: 20px ;
             }
         }
         .card-pic {
-            width: 367px;
+            width: 342px;
             border-radius: 5px;
             overflow: hidden;
         }
         .card img {
+            width: 100%;
             border-radius: 5px;
-            transition: .8s;
+            transition: .5s;
         }
         .card img:hover {
             transform: scale(1.1);
@@ -1028,7 +987,7 @@ body {
         .card a{
             color: #2B2B2B;
             text-decoration-color: #f000 ;
-            transition: .8s;
+            transition: .55s;
         }
 
         .card a:hover {
@@ -1038,33 +997,32 @@ body {
 }
 
 /* ==================關於我們===================== */
-#about-us {
-    padding: 100px 0 100px 0;
+#about-brands {
+    /* padding: 200px 0 200px 0; */
     display: flex;
     justify-content: center;
     font-family: 'Segoe Script', 'Noto Serif TC', serif;
     /* background-color: #aaa; */
 
     .about-title{
-        width: 40%;
-        padding: 0 0px 0 50px;
-        margin: auto 50px;
+        width: 25%;
+        margin: 280px 0 auto -25px ;
+        margin-right: auto;
         font-size: 40px;
         line-height: 80px;
+        text-align: center;
         color: #2B2B2B;
         /* background-color: #070; */
         position: relative;
         left: 10px;
     }
-    .about-title h2{
-        text-align: right;
+    .about-title h2 {
         color: #888;
-        /* font-size: 32px; */
     }
     .title-deco {
         position: relative;
-        top: 198px;
-        left: -250px;
+        top: 358px;
+        left: -1250px;
     }
     .deco-line {
         position: absolute;
@@ -1074,72 +1032,14 @@ body {
         background-color: #aaa;
     }
     #rotate-line{
-        left: -10px;
+        left: -50px;
         transform: rotate(90deg);
     }
 
-    .about-us-text {
-        padding: 50px 100px 50px 100px;
-        margin-left: 30px;
-        line-height: 50px;
-        font-size: 24px;
-        letter-spacing: 1px;
-        /* background-color: #faa; */
-    }
-}
-
-#brand-concept {
-    /* margin-top: 100px; */
-    /* padding: 100px 0 100px 0; */
-    display: flex;
-    /* justify-content: center; */
-    width: 60%;
-    font-family: 'Segoe Script', 'Noto Serif TC', serif;
-    /* background-color: #aaa; */
-
-    .about-title{
-        /* width: 40%; */
-        /* padding: 0 0px 0 50px; */
-        margin: 200px 50px 0 -50px;
-        font-size: 40px;
-        line-height: 80px;
-        color: #2B2B2B;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        /* background-color: #070; */
-        position: relative;
-        left: 10px;
-    }
-    .about-title h2{
-        margin-left: 130px;
-        /* background-color: #faa; */
-        /* text-align: right; */
-        color: #888;
-        /* font-size: 32px; */
-    }
-    .title-deco {
-        position: relative;
-        top: 280px;
-        left: -320px;
-    }
-    .deco-line {
-        position: absolute;
-        width: 500px;
-        height: 1px;
-        left: -200px;
-        background-color: #aaa;
-    }
-    /* .brand-bg {
-        width: 1211px;
-        height: 580px;
-        overflow: hidden;
-    } */
+    
     .brand-bg img{
-        width: 1211px;
-        /* height: 580px; */
-        
-        /* border: 1px solid #000; */
+        width: 1100px;
+        margin-top: 80px;
         border-radius: 100px 0 0 100px;
         box-shadow: -20px 30px #BBC1DA ;
         position: absolute;
@@ -1150,56 +1050,74 @@ body {
         z-index: -1;
     }
 }
-#concept-text {
+
+
+#about-text {
     width: 100%;
     /* height: 450px; */
     padding: 70px;
     margin: 250px 50px 500px 50px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background-color: #faa; */
 
     .text p{
-        width: 920px;
-        height: 400px;
-        padding-left: 40px;
+        width: 900px;
+        /* height: 100px; */
+        margin: auto;
         font-size: 24px;
         line-height: 50px;
         letter-spacing: 1px;
-        /* background-color: #B3AC9C; */
-        
-    }    
+        /* background-color: #B3AC9C; */ 
+    }  
+    .text #text-2 {
+        margin-top: -40px;
+
+    }
+    .brands-bg-bird{
+        width: 541px;
+        height: 150px;
+        background: url("../tiny_pic/05.about/about_middle_deco-v5.svg")no-repeat;
+        position: relative;
+        left: 700px;
+        bottom: 20px;
+        /* z-index:1; */
+    } 
 }
 
 .concept-bg img{
     width: 100%;
     height: 1223px;
-    /* background: url("/NiShangGe/tiny_pic/05.about/middle-bg-1920.png")no-repeat; */
     /* background-size: contain; */
     position: absolute;
     left: 0;
-    top: 1370px;
+    top: 1250px;
     z-index: -1;
 }
-.concept-bg-bird img{
+.concept-bg-bird {
     width: 541px;
     height: 343px;
-    /* background: url("/NiShangGe/tiny_pic/05.about/about_middle_deco.png")no-repeat; */
-    position: absolute;
-    left: 100px;
-    top: 1870px;
-    z-index:1;
-}
+    background: url("../tiny_pic/05.about/about_middle_deco-v6.svg")no-repeat;
+    position: relative;
+    /* left: -100px; */
+    top: -530px;
+    /* z-index:1; */
+} 
+
 
 #shop-info {
     /* width: 645px; */
-    margin: -130px 0 70px 30px;
+    margin: -450px 0 70px 30px;
     display: flex;
     justify-content: space-between;
     
     /* background-color: #070; */
-
+    
+    .map iframe {
+        border-radius: 10px;
+    }
     .information {
         /* margin-left: 50px; */
         margin: 0 -110px 0 80px;
@@ -1213,7 +1131,7 @@ body {
         width: 90%;
         font-size: 24px;
         padding-right: 80px;
-        font-family:'Noto Serif TC', serif;
+        font-family: 'Karla', 'Noto Serif TC',sans-serif;
         line-height:45px;
         letter-spacing: 2px;
         color: #2b2b2b;
@@ -1430,7 +1348,7 @@ body {
         width: 700px;
         font-size: 24px;
         padding: auto;
-        font-family:'Noto Serif TC', serif;
+        font-family: 'Karla', 'Noto Serif TC',sans-serif;
         line-height:45px;
         letter-spacing: 2px;
         color: #2b2b2b;
@@ -1534,41 +1452,58 @@ body {
         /* height: 100px; */
         margin-bottom: 60px;
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         justify-content: end;
         /* background-color: #faa; */
     }
     .card span {
-        margin-right: 20px;
+        margin:15px 0 0 0;
         padding: 0 30px 10px 0;
-        border-bottom: 1px  solid #777;
-        border-radius: 0 0 20px 0;
+        /* background-color: #faa; */
+        /* border-bottom: 1px  solid #777; */
+        /* border-radius: 0 0 20px 0; */
     }
     .card input {
         width: 880px;
         height: 73px;
         border-radius: 5px;
-        margin-left: 50px;
+        margin-left: 30px;
         border-color: #aaa;
         /* background-color: #faa; */
     }
     .card input[type="text"] {
-        border-color: #ddd;
-    }
-    .card input:placeholder-shown {
-        padding-left: 20px;
         font-size: 20px;
+        border: 1px solid #555;
+        border-color: #ddd;
+        padding-left: 20px;
     }
-    #request span {
+    .card input::placeholder {
+        /* padding-left: 20px; */
+        /* font-size: 20px; */
+    }
+    .card textarea {
+        width: 880px;
+        height: 200px;
+        border-radius: 5px;
+        margin-left: 30px;
+        border: 1px solid #bbb;
+        font-size: 20px;
+        /* padding-left: 20px; */
+        padding: 10px 0 0 20px;
+    }
+    /* .card textarea::placeholder {
+        padding:20px 0 0 20px; 
+    } */
+    /* #request span {
         margin-top: -250px;
-        /* display: flex; */
-        /* background-color: #faa; */
-        /* vertical-align: top; */
+        display: flex;
+        background-color: #faa;
+        vertical-align: top;
     }
     #request input{
         width: 880px;
         height: 305px;
-    }
+    } */
 
     .send {
         width: 90%;
@@ -1579,6 +1514,6 @@ body {
         /* background-color: #faa; */
     }
     .send span {
-        margin-right: 50px;
+        margin-right: 150px;
     }
 }
