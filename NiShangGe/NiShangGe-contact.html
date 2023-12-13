@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>聯絡我們| NiShangGe</title>
     <link rel="shortcut icon" href="tiny_pic/00.header.footer/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="CSS/NiShangGe.css">
     <link rel="stylesheet" href="CSS/header.footer.css">
+    <link rel="stylesheet" href="CSS/hanburger.css">
     <link rel="stylesheet" href="CSS/btn.css">
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/7b76b55736.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Noto+Serif+TC:wght@300;400;500&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
         @import url('https://fonts.cdnfonts.com/css/segoe-script');
@@ -19,85 +20,116 @@
 </head>
 <body>
 
-    <div class="header">
-        <nav class="main_menu">
-            <a href="https://lyn-green.github.io/CHD104/NiShangGe/" class="logo"><img src="tiny_pic/00.header.footer/logo_long.png"
-                    alt="NiShangGe"></a>
-            <div class="menu">
-                <ul>
-                    <li class="menu-products-list">
-                        <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-list.html#">商品總覽</a>
-                        <ul class="sub_menu">
-                            <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
-                            <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
-                            <li><a href="NiShangGe-list.html#others">其他</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-about.html">關於品牌</a>
-                    </li>
-                    <li>
-                        <a href="https://lyn-green.github.io/CHD104/NiShangGe/meet-with.html">認識漢服</a>
-                    </li>
-                    <li>
-                        <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-contact.html">聯絡我們</a>
-                    </li>
-                </ul>
-                <div class="button">
-                    <ul>
-                        <li><a href="#"><img src="tiny_pic/07.icon/icon_search.png" alt=""></a></li>
-                        <li><a href="#"><img src="tiny_pic/07.icon/icon_member.png" alt=""></a></li>
-                        <li><a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-cart.html"><img src="tiny_pic/07.icon/icon_cart.png" alt=""></a></li>
+<header>
+    <nav class="main_menu">
+        <div class="menu">
+            <a href="https://lyn-green.github.io/CHD104/NiShangGe/" class="logo"><img src="tiny_pic/00.header.footer/logo_long.png" alt="NiShangGe"></a>
+            <ul>
+                <li class="menu-products-list">
+                    <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-list.html#">商品總覽</a>
+                    <ul class="sub_menu">
+                        <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
+                        <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
+                        <li><a href="NiShangGe-list.html#others">其他</a></li>
                     </ul>
-                </div>
+                </li>
+                <li>
+                    <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-about.html">關於品牌</a>
+                </li>
+                <li>
+                    <a href="https://lyn-green.github.io/CHD104/NiShangGe/meet-with.html">認識漢服</a>
+                </li>
+                <li>
+                    <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-contact.html">聯絡我們</a>
+                </li>
+            </ul>
+            <div class="button">
+                <ul>
+                    <li><button><i class="fa-solid fa-magnifying-glass"></i></button></li>
+                    <li><button><i class="fa-solid fa-user"></i></button></li>
+                    <li><button><i class="fa-solid fa-cart-shopping fa-flip-horizontal"></i></button></li>
+                </ul>
             </div>
-        </nav>
-    </div>
+        </div>
+        <div class="phone-nav-bar">
+            <div class="nav-bar">
+                <a href="https://lyn-green.github.io/CHD104/NiShangGe/" class="logo"><img
+                    src="tiny_pic/00.header.footer/logo_long.png" alt="NiShangGe"></a>
+                <input type="checkbox" id="toggler">
+                <label for="toggler">
+                    <div class="hamburger-container">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+                <nav class="hb-main-menu">
+                    <ul class="left-bar">
+                        <li>
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-list.html"><span> | 商品總覽</span></a>
+                            <ul class="sub_menu">
+                                <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
+                                <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
+                                <li><a href="NiShangGe-list.html#others">其他</a></li>
+                            </ul>
+                        </li>
+                    </ul>    
+                    <ul class="right-bar">
+                        <li>
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-about.html"> | 關於品牌</a>
+                        </li>
+                        <li>
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/meet-with.html"> | 認識漢服</a>
+                        </li>
+                        <li>
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-contact.html"> | 聯絡我們</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
+</header>
     
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12" id="contact-us">
-                <div class="contact-title">
-                    <h1>聯絡我們</h1>
-                    <h2>Contact Us</h2>
-                </div>
-                <div class="title-deco">
-                    <div class="deco-line"></div>
-                    <div class="deco-line" id="rotate-line"></div>
-                </div>
-                <div class="contact-us-text">
-                    <p>
-                        我們深感榮幸為您提供服務 ，期待持續為您提供專業支援，<br>
-                        您的滿意將永遠是我們的驅動力。
-                    </p>
-                </div>
+<div class="container">
+    <div class="row">
+        <div class="col-12" id="contact-us">
+            <div class="contact-title">
+                <h1>聯絡我們</h1>
+                <h2>Contact Us</h2>
             </div>
-            <div class="col-12" id="contact-form">
-                <div class="cards">
-                    <!-- <div class="card">
-                        <span>公司名稱</span>
-                        <input type="text" placeholder="請輸入公司名稱">
-                    </div> -->
-                    <div class="card">
-                        <span>您的姓名</span>
-                        <input type="text" placeholder="請輸入您的姓名">
-                    </div>
-                    <div class="card">
-                        <span>聯繫方式</span>
-                        <input type="text" placeholder="請輸入您的聯繫方式">
-                    </div>
-                    <div class="card">
-                        <span>電子信箱</span>
-                        <input type="text" placeholder="請輸入您的電子信箱">
-                    </div>
-                    <div class="card">
-                        <span>您的需求</span>
-                        <textarea name="textarea" id="textarea" placeholder="請輸入您的需求"></textarea>
-                    </div>
+            <div class="title-deco">
+                <div class="deco-line"></div>
+                <div class="deco-line" id="rotate-line"></div>
+            </div>
+            <div class="contact-us-text">
+                <p>
+                    我們深感榮幸為您提供服務，<br>
+                    期待持續為您提供專業支援，<br>
+                    您的滿意將永遠是我們的驅動力。
+                </p>
+            </div>
+        </div>
+        <div class="col-12 " id="contact-form">
+            <div class="cards">
+                <div class="card">
+                    <span>您的姓名</span>
+                    <input type="text" placeholder="請輸入您的姓名">
+                </div>
+                <div class="card">
+                    <span>聯繫方式</span>
+                    <input type="text" placeholder="請輸入您的聯繫方式">
+                </div>
+                <div class="card">
+                    <span>電子信箱</span>
+                    <input type="text" placeholder="請輸入您的電子信箱">
+                </div>
+                <div class="card">
+                    <span>您的需求</span>
+                    <textarea name="textarea" id="textarea" placeholder="請輸入您的需求"></textarea>
                 </div>
                 <div class="send">
-                    <span>請確認輸入的內容無誤後送出無誤後送出。</span>
+                    <span>請確認輸入的內容無誤後送出。</span>
                     <div class="btn-send">
                         <input type="submit" value="確認並送出">
                     </div>
@@ -105,55 +137,53 @@
             </div>
         </div>
     </div>
+</div>
 
-
-    <div class="footer">
-        <div class="footer_bg"></div>
-        <div class="wrap">
-            <div class="main_menu">
-                <ul>
-                    <li>
-                        <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-list.html#">商品總覽</a>
-                        <ul class="sub_menu">
-                            <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
-                            <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
-                            <li><a href="NiShangGe-list.html#others">其他</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-about.html">關於品牌</a></li>
-                    <li><a href="https://lyn-green.github.io/CHD104/NiShangGe/meet-with.html">認識漢服</a></li>
-                </ul>
+<footer>
+    <div class="wrap">
+        <div class="footer_menu">
+            <ul>
+                <li>
+                    <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-list.html#">商品總覽</a>
+                    <ul class="sub_menu">
+                        <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
+                        <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
+                        <li><a href="NiShangGe-list.html#others">其他</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-about.html">關於品牌</a></li>
+                <li><a href="https://lyn-green.github.io/CHD104/NiShangGe/meet-with.html">認識漢服</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <div class="logo_img">
+                <a href="https://lyn-green.github.io/CHD104/NiShangGe/"><img src="tiny_pic/00.header.footer/logo_long.png" alt="NiShangGe"></a>
             </div>
-            <div class="logo">
-                <div class="logo_img">
-                    <a href="https://lyn-green.github.io/CHD104/NiShangGe/"><img src="tiny_pic/00.header.footer/logo_long.png"
-                            alt="NiShangGe"></a>
+            <div class="copyright">
+                <span>
+                    ©NiShangGe Studio Co. All rights reserved. <br>
+                    本網站為TibaMe_前端設計工程師班學員專題成果作品本平台僅供學習、展示之用。
+                </span>
+            </div>
+        </div>
+        <div class="connection">
+            <div class="connect">
+                <div class="connect_info">
+                    <span> 聯絡我們<br> Tel : (03)425-1108<br> Email : Nishang_Studio@gmail.com</span>
                 </div>
-                <div class="copyright">
-                    <span>
-                        Copyright ©NiShangGe Studio Co., Ltd. All rights reserved. <br>
-                        本網站為TibaMe_前端設計工程師班學員專題成果作品本平台僅供學習、展示之用。
-                    </span>
+                <div class="connect_way">
+                    <a href="#"><img src="tiny_pic/07.icon/InstagramLogo.png" alt="InstagramLogo."></a>
+                    <a href="#"><img src="tiny_pic/07.icon/TwitterLogo.png" alt="TwitterLogo"></a>
+                    <a href="#"><img src="tiny_pic/07.icon/FacebookLogo.png" alt="FacebookLogo"></a>
+                    <a href="#"><img src="tiny_pic/07.icon/LineLogo.png" alt="LineLogo"></a>
+                    <a href="#"><img src="tiny_pic/07.icon/WechatLogo.png" alt="WechatLogo"></a>
                 </div>
             </div>
-            <div class="connection">
-                <div class="connect">
-                    <div class="connect_info">
-                        <span> 聯絡我們<br> TEL : (03)425-1108<br> Email : Nishang_Studio@gmail.com</span>
-                    </div>
-                    <div class="connect_way">
-                        <a href="#"><img src="tiny_pic/07.icon/InstagramLogo.png" alt=""></a>
-                        <a href="#"><img src="tiny_pic/07.icon/TwitterLogo.png" alt=""></a>
-                        <a href="#"><img src="tiny_pic/07.icon/FacebookLogo.png" alt=""></a>
-                        <a href="#"><img src="tiny_pic/07.icon/LineLogo.png" alt=""></a>
-                        <a href="#"><img src="tiny_pic/07.icon/WechatLogo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="to-top">
-                    <a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-                </div>
+            <div class="to-top">
+                <a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>
+</footer>
 </body>
 </html>
