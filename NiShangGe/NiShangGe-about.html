@@ -2,103 +2,144 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>關於品牌| NiShangGe</title>
     <link rel="shortcut icon" href="tiny_pic/00.header.footer/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="CSS/NiShangGe.css">
     <link rel="stylesheet" href="CSS/header.footer.css">
+    <link rel="stylesheet" href="CSS/hanburger.css">
     <link rel="stylesheet" href="CSS/btn.css">
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/7b76b55736.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Noto+Serif+TC:wght@300;400;500&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
         @import url('https://fonts.cdnfonts.com/css/segoe-script');
     </style>
 </head>
 <body>
-    <div class="header">
-        <nav class="main_menu">
-            <a href="https://lyn-green.github.io/CHD104/NiShangGe/" class="logo"><img src="tiny_pic/00.header.footer/logo_long.png"
-                    alt="NiShangGe"></a>
-            <div class="menu">
-                <ul>
-                    <li class="menu-products-list">
-                        <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-list.html#">商品總覽</a>
-                        <ul class="sub_menu">
-                            <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
-                            <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
-                            <li><a href="NiShangGe-list.html#others">其他</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-about.html">關於品牌</a>
-                    </li>
-                    <li>
-                        <a href="https://lyn-green.github.io/CHD104/NiShangGe/meet-with.html">認識漢服</a>
-                    </li>
-                    <li>
-                        <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-contact.html">聯絡我們</a>
-                    </li>
-                </ul>
-                <div class="button">
-                    <ul>
-                        <li><a href="#"><img src="tiny_pic/07.icon/icon_search.png" alt=""></a></li>
-                        <li><a href="#"><img src="tiny_pic/07.icon/icon_member.png" alt=""></a></li>
-                        <li><a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-cart.html"><img src="tiny_pic/07.icon/icon_cart.png" alt=""></a></li>
+<header>
+    <nav class="main_menu">
+        <div class="menu">
+            <a href="https://lyn-green.github.io/CHD104/NiShangGe/" class="logo"><img src="tiny_pic/00.header.footer/logo_long.png" alt="NiShangGe"></a>
+            <ul>
+                <li class="menu-products-list">
+                    <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-list.html#">商品總覽</a>
+                    <ul class="sub_menu">
+                        <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
+                        <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
+                        <li><a href="NiShangGe-list.html#others">其他</a></li>
                     </ul>
-                </div>
+                </li>
+                <li>
+                    <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-about.html">關於品牌</a>
+                </li>
+                <li>
+                    <a href="https://lyn-green.github.io/CHD104/NiShangGe/meet-with.html">認識漢服</a>
+                </li>
+                <li>
+                    <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-contact.html">聯絡我們</a>
+                </li>
+            </ul>
+            <div class="button">
+                <ul>
+                    <li><button><i class="fa-solid fa-magnifying-glass"></i></button></li>
+                    <li><button><i class="fa-solid fa-user"></i></button></li>
+                    <li><button><i class="fa-solid fa-cart-shopping fa-flip-horizontal"></i></button></li>
+                </ul>
             </div>
-        </nav>
-    </div>
+        </div>
+        <div class="phone-nav-bar">
+            <div class="nav-bar">
+                <a href="https://lyn-green.github.io/CHD104/NiShangGe/" class="logo"><img
+                    src="tiny_pic/00.header.footer/logo_long.png" alt="NiShangGe"></a>
+                <input type="checkbox" id="toggler">
+                <label for="toggler">
+                    <div class="hamburger-container">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+                <nav class="hb-main-menu">
+                    <ul class="left-bar">
+                        <li>
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-list.html"><span> | 商品總覽</span></a>
+                            <ul class="sub_menu">
+                                <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
+                                <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
+                                <li><a href="NiShangGe-list.html#others">其他</a></li>
+                            </ul>
+                        </li>
+                    </ul>    
+                    <ul class="right-bar">
+                        <li>
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-about.html"> | 關於品牌</a>
+                        </li>
+                        <li>
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/meet-with.html"> | 認識漢服</a>
+                        </li>
+                        <li>
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-contact.html"> | 聯絡我們</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
+</header>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12" id="about-brands">
-                <div class="about-title">
-                    <h1>關於品牌</h1>
-                    <h2>A<span>bout Brands</span></h2>
-                </div>
-                <div class="title-deco">
-                    <div class="deco-line"></div>
-                    <div class="deco-line" id="rotate-line"></div>
-                </div>
-                <div class="brand-bg"><img src="tiny_pic/05.about/about_banner_v2.jpg" alt=""></div>
+<div class="container">
+    <div class="row">
+        <div class="col-12" id="about-brands">
+            <div class="about-title">
+                <h1>關於品牌</h1>
+                <h2>A<span>bout Brands</span></h2>
             </div>
-            <div class="col-12" id="about-text">
-                <div class="text">
-                    <p>
-                        我們是一個專注於漢服的品牌，我們致力於將中國傳統文化與現代時尚相結合。<br>
-                        我們的設計注重細節，以提供高品質、風格獨特的漢服。<br>
-                        我們的使命是傳遞中國優美的傳統藝術，同時讓每位客戶在穿著我們的漢服時感到自信和舒適。<br>
-                        歡迎加入我們，一同探索漢服之美。
-                    </p>
-                </div>
-                <div class="brands-bg-bird"></div>
-                <div class="text">
-                    <p id="text-2">
-                        我們深信漢服是一種文化的薪傳，是對過去的敬仰和對未來的探索。每一件我們的漢服都是精心設計和製作的藝術品，反映了對品質和細節的極致追求。<br>
-                        霓裳閣的設計團隊致力於將中國古代的優雅和尊貴注入每一個作品中。我們融合了千年的文化，並將其轉化為具有現代風格的漢服，旨在讓每位穿著我們的產品的人感到自信和優雅。<br>
-                        無論您參加婚禮、節日慶典或只是想感受中國文化的魅力，霓裳閣都為您提供一系列多樣化的選擇。我們將傳統和時尚相結合，為您帶來一個獨特的時尚體驗。<br>
-                        歡迎探索霓裳閣，一同感受漢服之美，將古今相連，讓文化繼續綻放。
-                    </p>
-                </div>
+            <div class="title-deco">
+                <div class="deco-line"></div>
+                <div class="deco-line" id="rotate-line"></div>
             </div>
-            <div class="concept-bg"><img src="tiny_pic/05.about/middle-bg-1920.png" alt=""></div>
-            <div class="concept-bg-bird"></div>
-            <div class="col-12" id="shop-info">
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2491803208986!2d121.22051663696769!3d24.957635427682582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1701245080276!5m2!1szh-TW!2stw" width="800" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="information">
-                    <div class="info-text">
+            <div class="brand-bg"><img src="tiny_pic/05.about/about_banner_v2.jpg" alt=""></div>
+        </div>
+        <div class="col-12" id="about-text">
+            <div class="text">
+                <p>
+                    我們是一個專注於漢服的品牌，我們致力於將中國傳統文化與現代時尚相結合。<br>
+                    我們的設計注重細節，以提供高品質、風格獨特的漢服。<br>
+                    我們的使命是傳遞中國優美的傳統藝術，同時讓每位客戶在穿著我們的漢服時感到自信和舒適。<br>
+                    歡迎加入我們，一同探索漢服之美。
+                </p>
+            </div>
+            <div class="brands-bg-bird"></div>
+            <div class="text">
+                <p id="text-2">
+                    我們深信漢服是一種文化的薪傳，是對過去的敬仰和對未來的探索。每一件我們的漢服都是精心設計和製作的藝術品，反映了對品質和細節的極致追求。<br>
+                    霓裳閣的設計團隊致力於將中國古代的優雅和尊貴注入每一個作品中。我們融合了千年的文化，並將其轉化為具有現代風格的漢服，旨在讓每位穿著我們的產品的人感到自信和優雅。<br>
+                    無論您參加婚禮、節日慶典或只是想感受中國文化的魅力，霓裳閣都為您提供一系列多樣化的選擇。我們將傳統和時尚相結合，為您帶來一個獨特的時尚體驗。<br>
+                    歡迎探索霓裳閣，一同感受漢服之美，將古今相連，讓文化繼續綻放。
+                </p>
+            </div>
+        </div>
+
+        <div class="concept-bg"><img src="tiny_pic/05.about/middle-bg-1920.png" alt=""></div>
+        <div class="concept-bg-bird"></div>
+
+        <div class="col-12" id="shop-info">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2491803208986!2d121.22051663696769!3d24.957635427682582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1701245080276!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="information">
+                <div class="info-text">
+                    <div class="info-text-title">
                         <h1>實體店資訊</h1>
                         <h1>Shop Information</h1>
-                        <h2>
+                    </div>
+                    <div class="info-text-detail">
+                        <p>
                             桃園市中壢區復興路46號8樓<br>
                             8th Floor, No. 46, Fuxing Road, Zhongli District, Taoyuan City, Taiwan
-                        </h2>
+                        </p>
                         <p>聯絡電話 : <span>(03)425-1108</span></p>
                         <p>電子郵件 : <span>Nishang_Studio@gmail.com</span></p>
                         <p>營業時間 : <span>10 : 00 ~ 17 :30</span></p>
@@ -112,64 +153,63 @@
                         <div class="btn-contact-us">
                             <a href="#">聯絡我們<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                         </div>
-                    </div>
-                    
+                    </div>   
                 </div>
             </div>
-
-        </div>
-    </div>
-
-
-
-    <div class="footer">
-        <div class="footer_bg"></div>
-        <div class="wrap">
-            <div class="main_menu">
-                <ul>
-                    <li>
-                        <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-list.html#">商品總覽</a>
-                        <ul class="sub_menu">
-                            <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
-                            <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
-                            <li><a href="NiShangGe-list.html#others">其他</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-about.html">關於品牌</a></li>
-                    <li><a href="https://lyn-green.github.io/CHD104/NiShangGe/meet-with.html">認識漢服</a></li>
-                </ul>
-            </div>
-            <div class="logo">
-                <div class="logo_img">
-                    <a href="https://lyn-green.github.io/CHD104/NiShangGe/"><img src="tiny_pic/00.header.footer/logo_long.png"
-                            alt="NiShangGe"></a>
-                </div>
-                <div class="copyright">
-                    <span>
-                        Copyright ©NiShangGe Studio Co., Ltd. All rights reserved. <br>
-                        本網站為TibaMe_前端設計工程師班學員專題成果作品本平台僅供學習、展示之用。
-                    </span>
-                </div>
-            </div>
-            <div class="connection">
-                <div class="connect">
-                    <div class="connect_info">
-                        <span> 聯絡我們<br> TEL : (03)425-1108<br> Email : Nishang_Studio@gmail.com</span>
-                    </div>
-                    <div class="connect_way">
-                        <a href="#"><img src="tiny_pic/07.icon/InstagramLogo.png" alt=""></a>
-                        <a href="#"><img src="tiny_pic/07.icon/TwitterLogo.png" alt=""></a>
-                        <a href="#"><img src="tiny_pic/07.icon/FacebookLogo.png" alt=""></a>
-                        <a href="#"><img src="tiny_pic/07.icon/LineLogo.png" alt=""></a>
-                        <a href="#"><img src="tiny_pic/07.icon/WechatLogo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="to-top">
-                    <a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-                </div>
+            <div class="btn-contact-us-w768">
+                <a href="#">聯絡我們 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
             </div>
         </div>
+
     </div>
+</div>
+
+<footer>
+    <div class="wrap">
+        <div class="footer_menu">
+            <ul>
+                <li>
+                    <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-list.html#">商品總覽</a>
+                    <ul class="sub_menu">
+                        <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
+                        <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
+                        <li><a href="NiShangGe-list.html#others">其他</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-about.html">關於品牌</a></li>
+                <li><a href="https://lyn-green.github.io/CHD104/NiShangGe/meet-with.html">認識漢服</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <div class="logo_img">
+                <a href="https://lyn-green.github.io/CHD104/NiShangGe/"><img src="tiny_pic/00.header.footer/logo_long.png" alt="NiShangGe"></a>
+            </div>
+            <div class="copyright">
+                <span>
+                    ©NiShangGe Studio Co. All rights reserved. <br>
+                    本網站為TibaMe_前端設計工程師班學員專題成果作品本平台僅供學習、展示之用。
+                </span>
+            </div>
+        </div>
+        <div class="connection">
+            <div class="connect">
+                <div class="connect_info">
+                    <span> 聯絡我們<br> Tel : (03)425-1108<br> Email : Nishang_Studio@gmail.com</span>
+                </div>
+                <div class="connect_way">
+                    <a href="#"><img src="tiny_pic/07.icon/InstagramLogo.png" alt="InstagramLogo."></a>
+                    <a href="#"><img src="tiny_pic/07.icon/TwitterLogo.png" alt="TwitterLogo"></a>
+                    <a href="#"><img src="tiny_pic/07.icon/FacebookLogo.png" alt="FacebookLogo"></a>
+                    <a href="#"><img src="tiny_pic/07.icon/LineLogo.png" alt="LineLogo"></a>
+                    <a href="#"><img src="tiny_pic/07.icon/WechatLogo.png" alt="WechatLogo"></a>
+                </div>
+            </div>
+            <div class="to-top">
+                <a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
