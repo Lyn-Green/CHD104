@@ -4,290 +4,353 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>霓裳閣</title>
+    <title>購物車| NiShangGe</title>
     <link rel="shortcut icon" href="tiny_pic/00.header.footer/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="CSS/NiShangGe.css">
-    <!-- <link rel="stylesheet" href="CSS/cart.css"> -->
     <link rel="stylesheet" href="CSS/header.footer.css">
+    <link rel="stylesheet" href="CSS/hanburger.css">
     <link rel="stylesheet" href="CSS/btn.css">
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/7b76b55736.js" crossorigin="anonymous"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Noto+Serif+TC:wght@300;400;500&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
         @import url('https://fonts.cdnfonts.com/css/segoe-script');
     </style>
 </head>
 
 <body>
-    <div class="header">
-        <nav class="main_menu">
-            <a href="http://127.0.0.1:5500/NiShangGe/" class="logo"><img src="tiny_pic/00.header.footer/logo_long.png"
-                    alt="NiShangGe"></a>
-            <div class="menu">
-                <ul>
-                    <li class="menu-products-list">
-                        <a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-list.html#">商品總覽</a>
-                        <ul class="sub_menu">
-                            <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
-                            <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
-                            <li><a href="NiShangGe-list.html#others">其他</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-about.html">關於品牌</a>
-                    </li>
-                    <li>
-                        <a href="http://127.0.0.1:5500/NiShangGe/meet-with.html">認識漢服</a>
-                    </li>
-                    <li>
-                        <a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-contact.html">聯絡我們</a>
-                    </li>
-                </ul>
-                <div class="button">
-                    <ul>
-                        <li><a href="#"><img src="tiny_pic/07.icon/icon_search.png" alt=""></a></li>
-                        <li><a href="#"><img src="tiny_pic/07.icon/icon_member.png" alt=""></a></li>
-                        <li><a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-cart.html"><img src="tiny_pic/07.icon/icon_cart.png" alt=""></a></li>
+<header>
+    <nav class="main_menu">
+        <div class="menu">
+            <a href="https://lyn-green.github.io/CHD104/NiShangGe/" class="logo"><img src="tiny_pic/00.header.footer/logo_long.png" alt="NiShangGe"></a>
+            <ul>
+                <li class="menu-products-list">
+                    <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-list.html#">商品總覽</a>
+                    <ul class="sub_menu">
+                        <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
+                        <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
+                        <li><a href="NiShangGe-list.html#others">其他</a></li>
                     </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <div class="container">
-        <div class="cart-title">
-            <h1>購物車</h1>
-            <div class="cart-bg"></div>
-            <div class="cart-bg-2"></div>
-        </div>
-        <div class="row" id="cart-row">
-            <div class="col-9">
-                <div class="cart-product">
-                    <div class="cart-item">
-                        <div class="item-img">
-                            <a href="http://127.0.0.1:5500//NiShangGe/NiShangGe-product.html"><img src="tiny_pic/04.cart/cart_item_01.jpg" alt=""></a>
-                        </div>
-                        <div class="cart-detail">
-                            <div class="text">
-                                <a href="http://127.0.0.1:5500//NiShangGe/NiShangGe-product.html">
-                                    <h2> 青染白綾 |<br> Blue-dyed White Silk </h2>
-                                </a>
-                                <span>NT$ 4,599</span>
-                            </div>
-                            <div class="cart-btn">
-                                <div class="btn-count">
-                                    <div class="box">+</div>
-                                    <div class="box">1</div>
-                                    <div class="box">+</div>
-                                </div>
-                                <div class="btn-trash">
-                                    <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cart-item">
-                        <div class="item-img">
-                            <a href="http://127.0.0.1:5500//NiShangGe/NiShangGe-product.html"><img src="tiny_pic/04.cart/cart_item_02.jpg" alt=""></a>
-                        </div>
-                        <div class="cart-detail">
-                            <div class="text">
-                                <a href="http://127.0.0.1:5500//NiShangGe/NiShangGe-product.html">
-                                    <h2> 映日紅 |<br> Sunlit Red </h2>
-                                </a>
-                                <span>NT$ 5,999</span>
-                            </div>
-                            <div class="cart-btn">
-                                <div class="btn-count">
-                                    <div class="box">+</div>
-                                    <div class="box">1</div>
-                                    <div class="box">+</div>
-                                </div>
-                                <div class="btn-trash">
-                                    <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cart-item">
-                        <div class="item-img">
-                            <a href="http://127.0.0.1:5500//NiShangGe/NiShangGe-product.html"><img src="tiny_pic/04.cart/cart_item_03.jpg" alt=""></a>
-                        </div>
-                        <div class="cart-detail">
-                            <div class="text">
-                                <a href="http://127.0.0.1:5500//NiShangGe/NiShangGe-product.html">
-                                    <h2> 翠影古韻<br> Emerald Elegance </h2>
-                                </a>
-                                <span>NT$ 880</span>
-                            </div>
-                            <div class="cart-btn">
-                                <div class="btn-count">
-                                    <div class="box">+</div>
-                                    <div class="box">1</div>
-                                    <div class="box">+</div>
-                                </div>
-                                <div class="btn-trash">
-                                    <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cart-item">
-                        <div class="item-img">
-                            <a href="http://127.0.0.1:5500//NiShangGe/NiShangGe-product.html"><img src="tiny_pic/04.cart/cart_item_04.jpg" alt=""></a>
-                        </div>
-                        <div class="cart-detail">
-                            <div class="text">
-                                <a href="http://127.0.0.1:5500//NiShangGe/NiShangGe-product.html">
-                                    <h2> 燒藍步搖流蘇簪子|<br>Swaying Tassel Hairpin </h2>
-                                </a>
-                                <span>NT$ 980</span>
-                            </div>
-                            <div class="cart-btn">
-                                <div class="btn-count">
-                                    <div class="box">+</div>
-                                    <div class="box">1</div>
-                                    <div class="box">+</div>
-                                </div>
-                                <div class="btn-trash">
-                                    <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="calculation">
-                    <div class="calculate">
-                        <div class="card">
-                            <span>訂單金額</span>
-                            <span>NT$ 12,458</span>
-                        </div>
-                        <div class="card">
-                            <span>配送費</span>
-                            <span>NT$ 150</span>
-                        </div>
-                        <div class="card">
-                            <span> 總價</span>
-                            <span>NT$ 12,608</span>
-                        </div>
-                    </div>
-                    <div class="to-pay">
-                        <div class="btn-pay">
-                            <a href="#">前往購買流程</a>
-                        </div>
-                        <div class="pay-way">
-                            <h4>我們接受</h4>
-                            <img src="tiny_pic/07.icon/icon_MasterCard.png" alt="">
-                            <img src="tiny_pic/07.icon/icon_VISA.png" alt="">
-                            <img src="tiny_pic/07.icon/icon_JCB.png" alt="">
-                            <img src="tiny_pic/07.icon/icon_UnionPay.png" alt="">
-                        </div>
-                    </div>
-                </div>
+                </li>
+                <li>
+                    <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-about.html">關於品牌</a>
+                </li>
+                <li>
+                    <a href="https://lyn-green.github.io/CHD104/NiShangGe/meet-with.html">認識漢服</a>
+                </li>
+                <li>
+                    <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-contact.html">聯絡我們</a>
+                </li>
+            </ul>
+            <div class="button">
+                <ul>
+                    <li><button><i class="fa-solid fa-magnifying-glass"></i></button></li>
+                    <li><button><i class="fa-solid fa-user"></i></button></li>
+                    <li><button><i class="fa-solid fa-cart-shopping fa-flip-horizontal"></i></button></li>
+                </ul>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12" id="you-may-like">
-                <div class="cart-cards">
-                    <div class="title">
-                        <h3>你也許也會喜歡</h3>
+        <div class="phone-nav-bar">
+            <div class="nav-bar">
+                <a href="https://lyn-green.github.io/CHD104/NiShangGe/" class="logo"><img
+                    src="tiny_pic/00.header.footer/logo_long.png" alt="NiShangGe"></a>
+                <input type="checkbox" id="toggler">
+                <label for="toggler">
+                    <div class="hamburger-container">
+                        <span></span>
+                        <span></span>
                     </div>
-                    <div class="cart-card">
-                        <div class="card">
+                </label>
+                <nav class="hb-main-menu">
+                    <ul class="left-bar">
+                        <li>
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-list.html"><span> | 商品總覽</span></a>
+                            <ul class="sub_menu">
+                                <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
+                                <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
+                                <li><a href="NiShangGe-list.html#others">其他</a></li>
+                            </ul>
+                        </li>
+                    </ul>    
+                    <ul class="right-bar">
+                        <li>
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-about.html"> | 關於品牌</a>
+                        </li>
+                        <li>
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/meet-with.html"> | 認識漢服</a>
+                        </li>
+                        <li>
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-contact.html"> | 聯絡我們</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<div class="container" id="cart-container">
+    <div class="cart-title">
+        <h1>購物車</h1>
+        <div class="cart-bg"><img src="tiny_pic/04.cart/cart_header_bg_01.png" alt=""></div>
+        <div class="cart-bg-2"><img src="tiny_pic/04.cart/cart_header_bg_02.png" alt=""></div>
+    </div>
+    <div class="row" id="cart-row">
+        <div class="col-8">
+            <div class="cart-product">
+                <div class="cart-item">
+                    <div class="item-img">
+                        <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-product.html"><img src="tiny_pic/04.cart/cart_item_01.jpg" alt="cart_item_01"></a>
+                    </div>
+                    <div class="cart-detail">
+                        <div class="text">
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-product.html">
+                                <h2> 青染白綾 |<br> Blue-dyed White Silk </h2>
+                            </a>
+                        </div>
+                        <div class="cart-btn">
+                            <select name="size" id="">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <div class="btn-count">
+                                <div class="box">-</div>
+                                <div class="box">1</div>
+                                <div class="box">+</div>
+                            </div>
+                            <div class="btn-trash">
+                                <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+                            </div>
+                        </div>
+                        <span>NT$ 4,599</span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="item-img">
+                        <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-product.html"><img src="tiny_pic/04.cart/cart_item_02.jpg" alt="cart_item_02"></a>
+                    </div>
+                    <div class="cart-detail">
+                        <div class="text">
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-product.html">
+                                <h2> 映日紅 |<br> Sunlit Red </h2>
+                            </a>
+                        </div>
+                        <div class="cart-btn">
+                            <select name="size" id="">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <div class="btn-count">
+                                <div class="box">-</div>
+                                <div class="box">1</div>
+                                <div class="box">+</div>
+                            </div>
+                            <div class="btn-trash">
+                                <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+                            </div>
+                        </div>
+                        <span>NT$ 5,999</span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="item-img">
+                        <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-product.html"><img src="tiny_pic/04.cart/cart_item_03.jpg" alt="cart_item_03"></a>
+                    </div>
+                    <div class="cart-detail">
+                        <div class="text">
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-product.html">
+                                <h2> 翠影古韻 |<br> Emerald Elegance </h2>
+                            </a>
+                        </div>
+                        <div class="cart-btn">
+                            <select name="size" id="">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <div class="btn-count">
+                                <div class="box">-</div>
+                                <div class="box">1</div>
+                                <div class="box">+</div>
+                            </div>
+                            <div class="btn-trash">
+                                <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+                            </div>
+                        </div>
+                        <span>NT$ 880</span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="item-img">
+                        <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-product.html"><img src="tiny_pic/04.cart/cart_item_04.jpg" alt="cart_item_04"></a>
+                    </div>
+                    <div class="cart-detail">
+                        <div class="text">
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-product.html">
+                                <h2> 燒藍步搖流蘇簪子 |<br>Swaying Tassel Hairpin </h2>
+                            </a>
+                        </div>
+                        <div class="cart-btn">
+                            <select name="size" id="">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <div class="btn-count">
+                                <div class="box">-</div>
+                                <div class="box">1</div>
+                                <div class="box">+</div>
+                            </div>
+                            <div class="btn-trash">
+                                <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+                            </div>
+                        </div>
+                        <span>NT$ 980</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-md-12">
+            <div class="calculation">
+                <div class="calculate">
+                    <div class="card">
+                        <span>訂單金額</span>
+                        <span>NT$ 12,458</span>
+                    </div>
+                    <div class="card">
+                        <span>配送費</span>
+                        <span>NT$ 150</span>
+                    </div>
+                    <div class="card">
+                        <span> 總價</span>
+                        <span>NT$ 12,608</span>
+                    </div>
+                </div>
+                <div class="to-pay">
+                    <div class="btn-pay">
+                        <input type="submit" value="前往購買流程">
+                    </div>
+                    <div class="pay-way">
+                        <span>我們接受</span>
+                        <img src="tiny_pic/07.icon/icon_MasterCard.png" alt="icon_MasterCard">
+                        <img src="tiny_pic/07.icon/icon_VISA.png" alt="icon_VISA">
+                        <img src="tiny_pic/07.icon/icon_JCB.png" alt="icon_JCB">
+                        <img src="tiny_pic/07.icon/icon_UnionPay.png" alt="icon_UnionPay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12" id="you-may-like">
+            <div class="cart-cards">
+                <div class="title">
+                    <h3>你也許也會喜歡</h3>
+                </div>
+                <div class="cart-card">
+                    <ul class="card-scroll">
+                        <li class="card">
                             <div class="card-pic">
                                 <a href="#"><img src="tiny_pic/04.cart/list_item_09.jpg" alt=""></a>
                             </div>
                             <div class="text">
                                 <a href="#">
-                                    <h2> 青漸變金鎖瓔珞背雲 |<br> Green Gradual Changing necklace</h2>
+                                    <h2> 青漸變金鎖瓔珞背雲 |<br> <span>Green Gradual Changing necklace</span></h2>
                                 </a>
                                 <span>NT$ 1,280</span>
                             </div>
-                        </div>
-                        <div class="card">
+                        </li>
+                        <li class="card">
                             <div class="card-pic"><a href="#"><img src="tiny_pic/04.cart/list_item_03.jpg" alt=""></a></div>
                             <div class="text">
                                 <a href="#">
-                                    <h2> 玄燭 |<br> Mysterious Candle</h2>
+                                    <h2> 玄燭 |<br> <span>Mysterious Candle</span></h2>
                                 </a>
                                 <span>NT$ 6,299</span>
                             </div>
-                        </div>
-                        <div class="card">
+                        </li>
+                        <li class="card">
                             <div class="card-pic"><a href="#"><img src="tiny_pic/04.cart/list_item_05.jpg" alt=""></a></div>
                             <div class="text">
                                 <a href="#">
-                                    <h2> 春色綺白 |<br> Spring Colors, Elegant White</h2>
+                                    <h2> 春色綺白 |<br> <span>Spring Colors, Elegant White</span></h2>
                                 </a>
                                 <span>NT$ 3,999</span>
                             </div>
-                        </div>
-                        <div class="card">
+                        </li>
+                        <li class="card">
                             <div class="card-pic">
                                 <a href="#"><img src="tiny_pic/04.cart/list_item_06.jpg" alt=""></a>
                             </div>
                             <div class="text">
                                 <a href="#">
-                                    <h2> 明月映影 |<br> Bright Moon Reflecting Shadows</h2>
+                                    <h2> 明月映影 |<br> <span>Bright Moon Reflecting Shadows</span></h2>
                                 </a>
                                 <span>NT$ 3,499</span>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="footer_bg"></div>
-        <div class="wrap">
-            <div class="main_menu">
-                <ul>
-                    <li>
-                        <a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-list.html#">商品總覽</a>
-                        <ul class="sub_menu">
-                            <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
-                            <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
-                            <li><a href="NiShangGe-list.html#others">其他</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="http://127.0.0.1:5500/NiShangGe/NiShangGe-about.html">關於品牌</a></li>
-                    <li><a href="http://127.0.0.1:5500/NiShangGe/meet-with.html">認識漢服</a></li>
-                </ul>
+</div>
+
+
+<footer>
+    <div class="wrap">
+        <div class="footer_menu">
+            <ul>
+                <li>
+                    <a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-list.html#">商品總覽</a>
+                    <ul class="sub_menu">
+                        <li><a href="NiShangGe-list.html#hanfu">漢服</a></li>
+                        <li><a href="NiShangGe-list.html#accessory">配飾</a></li>
+                        <li><a href="NiShangGe-list.html#others">其他</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://lyn-green.github.io/CHD104/NiShangGe/NiShangGe-about.html">關於品牌</a></li>
+                <li><a href="https://lyn-green.github.io/CHD104/NiShangGe/meet-with.html">認識漢服</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <div class="logo_img">
+                <a href="https://lyn-green.github.io/CHD104/NiShangGe/"><img src="tiny_pic/00.header.footer/logo_long.png" alt="NiShangGe"></a>
             </div>
-            <div class="logo">
-                <div class="logo_img">
-                    <a href="http://127.0.0.1:5500/NiShangGe/"><img src="tiny_pic/00.header.footer/logo_long.png"
-                            alt="NiShangGe"></a>
+            <div class="copyright">
+                <span>
+                    ©NiShangGe Studio Co. All rights reserved. <br>
+                    本網站為TibaMe_前端設計工程師班學員專題成果作品本平台僅供學習、展示之用。
+                </span>
+            </div>
+        </div>
+        <div class="connection">
+            <div class="connect">
+                <div class="connect_info">
+                    <span> 聯絡我們<br> Tel : (03)425-1108<br> Email : Nishang_Studio@gmail.com</span>
                 </div>
-                <div class="copyright">
-                    <span>本網站為TibaMe_前端設計工程師班學員專題成果作品本平台僅供學習、展示之用。</span>
+                <div class="connect_way">
+                    <a href="#"><img src="tiny_pic/07.icon/InstagramLogo.png" alt="InstagramLogo."></a>
+                    <a href="#"><img src="tiny_pic/07.icon/TwitterLogo.png" alt="TwitterLogo"></a>
+                    <a href="#"><img src="tiny_pic/07.icon/FacebookLogo.png" alt="FacebookLogo"></a>
+                    <a href="#"><img src="tiny_pic/07.icon/LineLogo.png" alt="LineLogo"></a>
+                    <a href="#"><img src="tiny_pic/07.icon/WechatLogo.png" alt="WechatLogo"></a>
                 </div>
             </div>
-            <div class="connection">
-                <div class="connect">
-                    <div class="connect_info">
-                        <span> 聯絡我們<br> TEL: (03)425-1108<br> Email: Nishang_Studio@gmail.com </span>
-                    </div>
-                    <div class="connect_way">
-                        <a href="#"><img src="tiny_pic/07.icon/InstagramLogo.png" alt=""></a>
-                        <a href="#"><img src="tiny_pic/07.icon/TwitterLogo.png" alt=""></a>
-                        <a href="#"><img src="tiny_pic/07.icon/FacebookLogo.png" alt=""></a>
-                        <a href="#"><img src="tiny_pic/07.icon/LineLogo.png" alt=""></a>
-                        <a href="#"><img src="tiny_pic/07.icon/WechatLogo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="to-top">
-                    <a href="#">Page top ____</a>
-                </div>
+            <div class="to-top">
+                <a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>
+</footer>
 </body>
 
 </html>
