@@ -6,9 +6,11 @@
     }
 } */
 
-font-size: clamp( 24px, 2.333vw, 28px );
-font-size: clamp( 18px, 1.666vw, 20px );
 font-size: clamp( 16px, 1.5vw, 18px );
+font-size: clamp( 18px, 1.666vw, 20px );
+font-size: clamp( 18px, 1.833vw, 22px );
+font-size: clamp( 18px, 2vw, 24px );
+font-size: clamp( 24px, 2.333vw, 28px );
 font-size: clamp( 24px, 2.666vw, 32px );
 @media ( width <= 768px ) {
     

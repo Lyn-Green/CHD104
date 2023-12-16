@@ -4,6 +4,7 @@ body {
     /* max-width:= 1200px; */
 }
 
+/* 更改選取反白顏色 */
 ::selection {
     color: #ddd;
     background: #555;
@@ -19,113 +20,216 @@ body {
     left: 0;
     z-index: -1;
 } 
-/* knowAbout======================================= */
+/* index 關於我們======================================= */
 .know_about {
-    width: 100%;
-    top: 950px;
-    position: relative;
+    width: 90%;
+    margin: 650px auto 0;
+    /* top: 950px; */
+    /* position: relative; */
     z-index: 0;
+    /* background-color: #faa; */
+
+    @media ( width <= 1200px ) {
+        margin-top: 550px;
+    }
+
+    @media ( width <= 768px ) {
+        margin-top: 330px;
+    }
+    @media ( width <= 450px ) {
+        width: 100%;
+        margin-top: 230px;
+    }
 }
 
 .card_aboutUs {
-    margin: 0 180px 0 250px;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #070; */
 
-    /* background-color: #faa; */
+
+
+    @media ( width <= 768px ) {
+        flex-direction: column;
+    }
+
+
+    .about_img {
+        width: 50%;
+        /* background-color: #aaa; */
+
+        @media ( width <= 768px ) {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        img {
+            width: 100%;
+            vertical-align: bottom;
+            border-radius: 5px;
+        }
+
+        
+    }
+    
+
+    
 }
 
-.card_aboutUs img {
-    width: 855px;
-    height: 650px;
-    vertical-align: bottom;
-    border-radius: 5px;
-}
 
+/* index 3區塊標題設定 */
 .introduce {
-    width: 450px;
-    /* padding: 0 80px 0 80px; */
+    width: 40%;
+
+
+    line-height: 50px;
     color: #2B2B2B;
-    font-size: 40px;
+    font-size: 32px;
     font-family: 'Segoe Script', 'Noto Serif TC', serif;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     text-align: center;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    vertical-align: middle;
-    /* background-color: #070; */
+    /* background-color: #ffa; */
+
+    @media ( width <= 1200px ) {
+        font-size: clamp( 24px, 2.666vw, 32px );
+    }
+
+    @media ( width <= 768px ) {
+        width: 100%;
+    }
+    @media ( width <= 450px ) {
+        line-height: 30px;
+    }
+
+}
+.title {
+    padding-bottom: 10px;
+    line-height: 50px;
+    color: #2B2B2B;
+    font-size: 32px;
+    font-family: 'Segoe Script', 'Noto Serif TC', serif;
+    letter-spacing: 1.5px;
+    text-align: center;
+    /* background-color: #afa; */
+
+    span {
+        font-size: 26px;
+        color: #aaa;
+        letter-spacing: 10px;
+
+        @media ( width <= 1200px ) {
+            font-size: clamp( 22px, 2.166vw, 26px );
+        }
+    }
+
+    @media ( width <= 768px ) {
+        display: none;
+    }
 }
 
-.introduce .title {
-    padding-bottom: 20px;
-    line-height: 60px;
-    /* background-color: #faa; */
-}
-
-.introduce .bottom_line {
-    width: 400px;
+.bottom_line {
+    width: 80%;
     height: 1px;
     border-top: 1px solid #ddd;
+
+    @media ( width <= 768px ) {
+        display: none;
+    }
 }
 
-.introduce span {
-    color: #aaa;
-    letter-spacing: 15px;
+.content {
+    width: 100%;
+
+    p {
+        width: 90%;
+        margin: 10px auto;
+        /* padding: 35px; */
+        font-size: 20px;
+        line-height: 50px;
+        text-align: left;
+        /* background-color: #faa; */
+    
+        @media ( width <= 1200px ) {
+            font-size: clamp( 18px, 1.666vw, 20px );
+        }
+        @media ( width <= 768px ) {
+            width: 80%;
+            margin: auto;
+        }
+    }
 }
 
-.introduce p {
-    width: 400px;
-    padding: 35px;
-    font-size: 20px;
-    line-height: 50px;
-    text-align: left;
-    /* background-color: #faa; */
+/* 768px 時區域 title變更 */
+.card_aboutUs > .title,
+.card_meetWith > .title {
+    width: 90%;
+    border-bottom: 1px solid #ccc;
+    display: none;
+
+    @media ( width <= 768px ) {
+        display: block;
+
+    } 
 }
 
-.btn_viewMore a {
-    width: 300px;
-    height: 80px;
-    border: 1px solid #bbb;
-    border-radius: 5px;
-    font-size: 20px;
-    color: #6F7170;
-    text-decoration: none;
-    text-align: center;
-    line-height: 80px;
-    display: inline-block;
-    vertical-align: middle;
-}
-.btn_viewMore img{
-    margin: 0;
-    width: 15px;
-    height: 15px;
-    vertical-align: middle;
-}
-/* meet with======================================= */
+
+
+
+/*index - meet with======================================= */
 .card_meetWith {
-    margin-top: 250px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     /* background-color: #070; */
+
+    @media ( width <= 768px ) {
+        margin-top: 150px;
+        flex-direction: column;
+    }
+    @media ( width <= 450px ) {
+        margin-top: 100px;
+    }
+
+    .title {
+        border-bottom: 1px solid #ccc;
+    }
 }
 
 .card_meetWith .introduce {
-    position: relative;
-    left: 100px;
-    top: 150px;
+    width: 40%;
+    /* position: relative; */
+    /* left: 100px; */
+    /* top: 150px; */
     padding-bottom: 70px;
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 0 40px 40px;
     border-bottom: 1px dotted #aaa;
     background-color: #fff;
+
+    @media ( width <= 768px ) {
+        width: 100%;
+        order: 1;
+    }
 }
 
 .meet_img {
-    margin-left: 0;
+    width: 60%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: baseline;
+
+    @media ( width <= 768px ) {
+        width: 100%;
+        margin: 20px auto 10px;
+        order: 0;
+    }
 }
 
 .meet_img img {
@@ -152,49 +256,89 @@ body {
     z-index: 1;
 }
 
+
+/* index- 中間背景圖 */
 .middle_bg {
     width: 100%;
-    height: 828px;
+    height: 100%;
     bottom: 100px;
     /* top: 1600px; */
-    top: 2550px;
+    top: 1980px;
+    left: 0;
     background: url("../tiny_pic/01.front/front_middle_bg_1920v3.png")no-repeat;
     /* background-image: url("../tiny_pic/01.front/front_middle_bg_1920v3.png")no-repeat; */
     background-attachment: fixed;
     background-size: cover;
     position: absolute;
     z-index: -1;
+
+    @media ( width <= 1400px ) {
+        /* top: 1950px; */
+    }
+    @media ( width <= 1200px ) {
+        top: 1770px;
+    }
+    @media ( width <= 768px ) {
+        top: 2370px;
+    }
+    @media ( width <= 450px ) {
+        top: 2070px;
+        /* background-size: a; */
+    }
+
 }
 
 /* newArrivals==================================== */
 .newArrivals {
-    width: 100%;
-    padding: 0 180px 0 180px;
-    margin-top: 1450px;
-    margin-bottom: 50px;
-    box-sizing: border-box;
+    width: 90%;
+    margin: 450px auto 0;
+
     display: flex;
     justify-content: space-evenly;
-    /* position: relative; */
+
     z-index: 3;
+
     font-family: 'Karla', 'Noto Serif TC',sans-serif;
     font-weight: 300;
     /* background-color: #000; */
+
+    @media ( width <= 1400px ) {
+        margin-top: 410px;
+    }
+    @media ( width <= 1200px ) {
+        margin-top: 320px;
+    }
+
+    @media ( width <= 768px ) {
+        flex-direction: column;
+    }
+
+    .title {
+        display: block;
+    }
 }
 
 .newArrivals a {
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 2px;
     line-height: 50px;
     text-decoration-color: #f000;
     color: #2B2B2B;
     transition: .5s;
+
+    @media ( width <= 1200px ) {
+        font-size: clamp( 18px, 1.833vw, 22px );
+    }
+
+    span {
+        font-size: 1.3rem;
+    }
 }
 .newArrivals a:hover {
     text-decoration-color: #aaa;
 }
 .newArrivals p {
-    font-size: 24px;
+    font-size: 1.3rem;
     letter-spacing: 2px;
     line-height: 50px;
     color: #2B2B2B;
@@ -204,7 +348,7 @@ body {
 }
 
 .newArr_left {
-    width: 100%;
+    width: 50%;
     display: flex;
     box-sizing: border-box;
     justify-content: center;
@@ -214,54 +358,85 @@ body {
     /* position: relative; */
     z-index: 1;
     /* background-color: #faa; */
+
+    @media ( width <= 768px ) {
+        width: 100%;
+    }
+
+    .btn_shop {
+
+        @media ( width <= 768px ) {
+            display: none;
+        }
+    }
 }
 
 .newArr_left .introduce {
     /* height: 450px; */
+    width: 80%;
     border-top: 1px dotted #aaa;
     padding: 80px 30px 80px 30px;
-    margin: 100px 0 30px 70px;
+    margin: 100px auto 70px;
     border-radius: 50px 50px 0 0;
     display: block;
-    justify-content: center;
     /* position: relative; */
     background-color: #fff;
+
+    @media ( width <= 768px ) {
+        width: 90%;
+        padding: 50px 0 0;
+        margin: 100px auto 70px;
+        border-radius: 30px 30px 0 0;
+    }
+
+
+    .title {
+        margin: auto;
+        @media ( width <= 768px ) {
+            width: 70%;
+            border-bottom: 1px solid #aaa;
+            /* background-color: #aaa; */
+    
+        }
+    }
 }
 
-.btn_shop a {
-    width: 300px;
-    height: 80px;
-    border: 1px solid #bbb;
-    border-radius: 5px;
-    font-size: 20px;
-    color: #6F7170;
-    text-decoration: none;
-    text-align: center;
-    line-height: 80px;
-    display: inline-block;
-    vertical-align: middle;
-    background-color: #fff;
-}
-.btn_shop img{
-    margin: 0;
-    width: 15px;
-    height: 15px;
-    vertical-align: middle;
-}
+
 .newArr_right {
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     /* text-align: center; */
     /* background-color: aquamarine; */
+
+    @media ( width <= 768px ) {
+        width: 100%;
+    }
+
+    .btn_shop {
+        display: none;
+
+        @media ( width <= 768px ) {
+            display: block;
+        }
+    }
+
 }
 
 .card-product {
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
+    /* background-color: #aaa; */
+
+    @media ( width <= 768px ) {
+        /* width: 47%; */
+    }
+    
 }
 
 .card-product img {
+    width: 100%;
     border-radius: 5px;
     transition: .5s;
 }
@@ -293,8 +468,13 @@ body {
 }
 
 .bg_bird_img img {
-    position: relative;
-    margin: -20px 0 0 -80px;
+    width: 40%;
+    position: absolute;
+    left: 20px;
+    
+    @media ( width <= 768px ) {
+        display: none;
+    }
 }
 
 
