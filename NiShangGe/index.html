@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>霓裳閣| NiShangGe</title>
     <link rel="shortcut icon" href="tiny_pic/00.header.footer/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="CSS/NiShangGe.css">
@@ -13,7 +14,8 @@
     <link rel="stylesheet" href="CSS/hanburger.css">
     <link rel="stylesheet" href="CSS/btn.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/7b76b55736.js" crossorigin="anonymous"></script>
+    
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Noto+Serif+TC:wght@300;400;500&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
         @import url('https://fonts.cdnfonts.com/css/segoe-script');
@@ -48,7 +50,7 @@
             <div class="button">
                 <ul>
                     <li><button><i class="fa-solid fa-magnifying-glass"></i></button></li>
-                    <li><button><i class="fa-solid fa-user"></i></button></li>
+                    <li id="openBtn"><button><i class="fa-solid fa-user"></i></button></li>
                     <li><button><i class="fa-solid fa-cart-shopping fa-flip-horizontal"></i></button></li>
                 </ul>
             </div>
@@ -92,10 +94,123 @@
     </nav>
 </header>
 
+<div class="card-login">
+    <div class="container-form">
+        <section class="loginCard"> 
+            <h2>帳號登入</h2>
+            <form action="">
+                <div class="inputBox">
+                    <span class="iconBox"><i class="fa-regular fa-envelope"></i></span>
+                    <input type="text" required>
+                    <label>電子信箱</label>
+                </div>
+                <div class="inputBox">
+                    <span class="iconBox"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" required>
+                    <label>密碼</label>
+                </div>
+
+                <div class="recovery-pass">
+                    <a href="#">忘記密碼 ?</a>
+                </div>
+                
+                <button type="submit">登入</button>
+
+                <div class="registerNow">
+                    <p>還沒有帳號嗎 ? <a href="#" class="registerLink">立即註冊 !</a></p>
+                </div>
+
+                <div class="other-login-way">
+                    <h4>更多登入方式</h4>
+                    <div class="social-web">
+                        <a href="#"><img src="tiny_pic/07.icon/icon_google.png" alt="icon_google"></a>
+                        <a href="#"><img src="tiny_pic/07.icon/icon_twitter.png" alt="icon_twitter"></a>
+                        <a href="#"><img src="tiny_pic/07.icon/icon_FB.png" alt="icon_FB"></a>
+                        <a href="#"><img src="tiny_pic/07.icon/icon_line.png" alt="icon_line"></a>
+                        <a href="#"><img src="tiny_pic/07.icon/icon_wechat.png" alt="icon_wechat"></a>
+                    
+                    </div>
+                </div>
+            </form>
+        </section>
+
+
+        <section class="registerCard"> 
+            <h2>註冊</h2>
+            <form action="">
+                <div class="inputBox">
+                    <span class="iconBox"><i class="fa-regular fa-envelope"></i></span>
+                    <input type="text" required>
+                    <label>請輸入電子信箱</label>
+                </div>
+                <div class="inputBox">
+                    <span class="iconBox"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" required>
+                    <label>請輸入密碼</label>
+                </div>
+                <!-- <div class="inputBox">
+                    <input type="password" required>
+                    <label>請再次輸入密碼</label>
+                </div> -->
+
+                <div class="recovery-pass">
+                    <label><input type="checkbox">我已閱讀並同意 <a href="#">所有條款</a>、 <a href="#">隱私政策</a></label>
+                </div>
+                
+                <button type="submit">註冊</button>
+
+                <div class="registerNow">
+                    <p>已有帳號 ? <a href="#" class="loginLink">登入</a></p>
+                </div>
+
+                <div class="other-login-way">
+                    <h4>更多登入方式</h4>
+                    <div class="social-web">
+                        <a href="#"><img src="tiny_pic/07.icon/icon_google.png" alt="icon_google"></a>
+                        <a href="#"><img src="tiny_pic/07.icon/icon_twitter.png" alt="icon_twitter"></a>
+                        <a href="#"><img src="tiny_pic/07.icon/icon_FB.png" alt="icon_FB"></a>
+                        <a href="#"><img src="tiny_pic/07.icon/icon_line.png" alt="icon_line"></a>
+                        <a href="#"><img src="tiny_pic/07.icon/icon_wechat.png" alt="icon_wechat"></a>
+                        
+                    </div>
+                </div>
+            </form>
+        </section>
+        <div class="closeBtn" id="closeBtn"><i class="fa-solid fa-x"></i></div>
+    </div>
+</div>
+
+<div class="index-banner">
+    <div class="banner">
+        <div class="banner-deco-sunlight"></div>
+        <div class="banner-deco-sun"></div>
+        <div class="bird-cont">
+            <div class="bird-container bird-container--one">
+                <div class="bird bird--one"></div>
+            </div>
+            <div class="bird-container bird-container--two">
+                <div class="bird bird--two"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container" id="index-container">
     <div class="row">
         <div class="col-12">
-            <div class="banner"><img src="tiny_pic/01.front/front_banner_1920_v2.png" alt=""></div>
+            <!-- <div class="banner">
+                <div class="banner-deco-sun"></div>
+                <div class="bird-cont">
+                    <div class="bird-container bird-container--one">
+                        <div class="bird bird--one"></div>
+                    </div>
+                    <div class="bird-container bird-container--two">
+                        <div class="bird bird--two"></div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <img src="tiny_pic/01.front/front_banner_1920_v2.png" alt=""> -->
             <div class="know_about">
                 <div class="card_aboutUs">
                     <div class="title">
@@ -142,10 +257,16 @@
                             </a>
                         </div>
                     </div>
-                    <div class="meet_img">
-                        <a href="#"><img src="tiny_pic/01.front/front_meet_02.jpg" alt=""></a>
-                        <a href="#"><img src="tiny_pic/01.front/front_meet_01.jpg" alt=""></a>
-                        <a href="#"><img src="tiny_pic/01.front/front_meet_03.jpg" alt=""></a>
+                    
+                    <div class="meet_img"> <!-- shell -->
+                        <div class="content"> 
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/meet-with.html" class="item"></a>
+                            <!-- <img src="tiny_pic/01.front/front_meet_02.png" alt=""> -->
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/meet-with.html" class="item"></a>
+                            <!-- <img src="tiny_pic/01.front/front_meet_01.jpg" alt=""> -->
+                            <a href="https://lyn-green.github.io/CHD104/NiShangGe/meet-with.html" class="item"></a>
+                            <!-- <img src="tiny_pic/01.front/front_meet_03.png" alt=""> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -290,6 +411,12 @@
     </div>
 </footer>
 
-</body>
 
+<!-- JS -->
+<script src="https://kit.fontawesome.com/7b76b55736.js" crossorigin="anonymous"></script>
+<script src="js/jq/jquery-3.7.1.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
 </html>

@@ -71,12 +71,13 @@ header {
     display: flex;
     justify-content: center;
     
+    
   }
   .menu li a {
     width: 80%;
     /* height: 30%; */
-    padding-top: 10px;
-    border: 3px solid #f000;
+    padding: 10px 0 5px;
+    border: 1px solid #f000;
     align-items: center;
     justify-content: center;
     line-height: 100px;
@@ -84,16 +85,35 @@ header {
     color: #2B2B2B;
     /* background-color: #070; */
     display: flex;
-    transition: all .5s;
+    transition: all .5s ease;
+
+    /* position: relative; */
   }
-  
+  /*另一種 hover 效果 
+  .menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 100%;
+    background-color: #888;
+    transition: all .4s ease;
+  }
+  .menu li a:hover::after {
+    width: 100%;
+  } */
+
   .menu li a:hover {
     /* width: 144px; */
     /* height: 80px; */
     /* border: 1px solid #888; */
+
     border-top: 1px solid #888;
     border-bottom: 1px solid #888;
     border-radius: 20px 0 20px 0;
+
     /* border-radius: 20px; */
   }
 
@@ -178,7 +198,246 @@ header {
   }
   
 }
+/* 登入box */
 
+.card-login.show {
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
+}
+.card-login {
+  /* 作背景遮障 透明*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 10;
+  background: transparent;
+  /* background: rgba(0, 0, 0, 0.3); */
+  font-family: 'Nunito Sans', 'Noto Serif TC',sans-serif;
+
+  transition: all .4s ease-in-out;
+  opacity: 0;
+  transform: scale(1.1);
+  /* transform: scaleY(0); */
+  visibility: hidden;
+  transform-origin: 50% 0;
+
+
+
+
+
+
+  .container-form {
+    width: 100%;
+    max-width: 400px;
+    max-height: 450px;
+    min-height: 450px;
+    padding: 10px;
+    /* border: 1px solid #fff; */
+    border-radius: 1.5rem;
+    margin:10px auto;
+    
+    background-image: linear-gradient(to bottom, rgba(231, 231, 231, 0.9), rgba(100%, 100%, 100%, .9));
+    /* background: transparent; */
+    /* backdrop-filter: blur(.9rem); */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .4s ease-in-out;
+
+    position: relative;
+
+
+    .loginCard,
+    .registerCard {
+      width: 100%;
+      padding: 1.5rem;
+
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+    form .inputBox {
+      position: relative;
+      border-bottom: 2px solid #fff;
+      width: 100%;
+      height: 2rem;
+      margin-top: 2rem;
+      font-size: 1rem;
+
+      .iconBox {
+        position: absolute;
+        top: 7px;
+        right: 0;
+
+        i {
+          font-size: 1.2rem;
+          color: #2B2B2B;
+        }
+      }
+
+
+      input {
+        display: inline-block;
+        background: transparent;
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 100%;
+        padding: 0 30px 0 3px;
+      }
+
+      label {
+        position: absolute;
+        left: 2px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1rem;
+        transition: all ease .45s;
+        pointer-events: none;
+      }
+
+      input:focus~label,
+      input:valid~label,
+      input:placeholder-shown~label {
+        top: -3px;
+      }
+      
+    }
+
+
+    .recovery-pass {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      font-size: .9rem;
+      margin: 10px 0;
+
+      a {
+        /* color: #2b2b2b; */
+        text-decoration: none;
+        border-bottom: 1px solid #f000;
+        transition:all .4s ;
+      }
+      a:hover {
+        border-bottom: 1px solid #2b2b2b;
+      }
+    }
+
+    .registerCard .recovery-pass {
+      justify-content: start;
+    }
+
+    button {
+      width: 100%;
+      color: #eee;
+      background-color: #2b2b2b;
+      border: none;
+      padding: 14px 0;
+      border-radius: .5rem;
+      margin: 1rem auto;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
+
+    .registerNow {
+      text-align: center;
+      font-size: .9rem;
+      margin-top: 10px;
+      font-weight: 400;
+      color: #2b2b2b;
+      
+      a {
+        /* color: #777; */
+        text-decoration: none;
+        border-bottom: 1px solid #f000;
+        transition:all .4s ;
+      }
+      a:hover {
+        border-bottom: 1px solid #2b2b2b;
+      }
+    }
+
+    .other-login-way {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+
+      h4 {
+        font-size: .9rem;
+      }
+      .social-web {
+        width: 80%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+
+        img {
+          width: 2rem;
+        }
+      }
+    }
+    .closeBtn {
+      position: absolute;
+      right: 1%;
+      top: 1%;
+      padding: 10px;
+      background-color: #2b2b2b;
+      border-radius: 5px 20px 5px 5px;
+      cursor: pointer;
+      display: inline-flex;
+
+      i {
+        color: #eee;
+        font-size: .7rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+
+.other-login-way h4::before {
+  content: "";
+  display: inline-block;
+  width: 5.5rem;
+  height: 1px;
+  background-color: #ddd;
+  position: relative;
+  top: -5px;
+  right: 10px;
+}
+.other-login-way h4::after {
+  content: "";
+  display: inline-block;
+  width: 5.5rem;
+  height: 1px;
+  background-color: #ddd;
+  position: relative;
+  top: -5px;
+  left: 10px;
+}
+
+.container-form .registerCard {
+  /* opacity: 0; */
+  display: none;
+}
+
+.container-form.active .registerCard {
+  display:block;
+}
+.container-form.active .loginCard {
+  display:none;
+}
 
 
 
@@ -186,12 +445,14 @@ header {
 
 footer {
   width: 100%;
-  height: 611px;
+  height: 30vw;
   /* height: auto; */
   display: flex;
   justify-content: center;
   align-items: end;
-  position: relative;
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* left: 0; */
   font-family: 'Nunito Sans', 'Noto Serif TC',sans-serif;
   font-weight: 400;
   z-index: 0;
@@ -481,7 +742,7 @@ footer {
       .main_menu {
       width: 100%;
       height: 80px;
-      border-radius: 0 0 20px 20px;
+      border-radius:0 ;
       /* background-color: #fff; */
       background-image: linear-gradient(to bottom, rgba(220, 220, 220, 1), rgba(100%, 100%, 100%, 1));
       }
