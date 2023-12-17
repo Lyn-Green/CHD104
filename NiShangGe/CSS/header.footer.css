@@ -647,9 +647,10 @@ footer {
       }
     
       .main_menu {
-        width: 100%;
-        height: 130px;
+        /* width: 100%; */
+        height: 100px;
         margin: auto;
+        border-radius: 0 0 40px 40px;
       }
   }
     
@@ -740,11 +741,11 @@ footer {
 
 
       .main_menu {
-      width: 100%;
+      width: 90%;
       height: 80px;
-      border-radius:0 ;
+      border-radius:0 0 30px 30px;
       /* background-color: #fff; */
-      background-image: linear-gradient(to bottom, rgba(220, 220, 220, 1), rgba(100%, 100%, 100%, 1));
+      background-image: linear-gradient(to bottom, rgba(220, 220, 220, 1), rgba(100%, 100%, 100%, .8));
       }
 
       
