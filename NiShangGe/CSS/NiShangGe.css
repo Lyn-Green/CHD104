@@ -4,10 +4,9 @@ body {
     /* max-width:= 1200px; */
     width: 100%;
     /* height: 100%; */
-    /* position: relative; */
-    background: url("../tiny_pic/01.front/front_banner_1920_v7.png")no-repeat;
-    background-size: contain;
-    /* z-index: -1; */
+    position: relative;
+    /* background: url("../tiny_pic/01.front/front_banner_1920_v7.png")no-repeat;
+    background-size: contain; */
     
 }
 
@@ -18,8 +17,17 @@ body {
 }
 
 .index-container {
+    width: 100%;   
+}
+.index-banner-img {
     width: 100%;
-    
+    height: 100vw;
+    position: absolute;
+    background: url("../tiny_pic/01.front/front_banner_1920_v7.png")no-repeat;
+    background-size: contain;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }
 .index-banner{
     width: 100%;
@@ -37,6 +45,8 @@ body {
     left: 0;
     z-index: 1;
 
+
+        /* 太陽 */
         .banner-deco-sun {
             width: 100px;
             height: 100px;
@@ -47,6 +57,7 @@ body {
             left: 8%;
             top: 17px;
         }
+        /* 太陽光旋轉 */
         .banner-deco-sunlight {
             width: 110px;
             height: 110px;
@@ -58,15 +69,109 @@ body {
             top:20px;
             animation: sunlight 3s linear infinite;
         }
+
+        .word {
+            width: 40vw;
+            height: 20vw;
+            font-size: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 30%;
+            top: 13%;
+            /* background-color: #faa; */
+
+            span {
+                display: inline-block;
+                margin: auto 20px;
+                /* animation: floatUpDown 2s infinite ease-in-out; */
+                /* background-color: #aaa; */
+            }
+
+            span:nth-child(1) {
+                animation: floatUpDown 6s infinite;
+            }
+            
+            /* 為 .word 中的第二個 span 應用第二個動畫，速度較快 */
+            span:nth-child(2) {
+                animation: floatUpDown 6.5s infinite;
+            }
+            
+            /* 為 .word 中的第三個 span 應用第一個動畫，速度較慢 */
+            span:nth-child(3) {
+                animation: floatUpDown 7s infinite;
+            }
+        }
+
+        .smoked {
+            
+            /* background-color: #faa; */
+            filter: url('#filter'); /*煙霧效果*/
+            display: flex;
+            /* justify-content: center; */
+        }
+        .smoked-content--one {
+            width: 70%;
+            height: 80px;
+            border-radius: 100%;
+            background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(218, 214, 214, 0.1), rgba(148, 148, 148, 0.1), rgba(136, 136, 136, .5));
+            /* background: linear-gradient(#555, #999, #555, #888); */
+            filter: blur(6px) contrast(120%);
+            position: absolute;
+            bottom: -90px;
+        }
+        .smoked-content--two{
+            width: 70%;
+            height: 140px;
+            border-radius: 50% 0 30% 10%;
+            background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(223, 223, 223, 0.1), rgba(194, 194, 194, 0.1), rgba(255, 255, 255, 0.6));
+            /* background: linear-gradient(#fff, #999, #555, #888); */
+            filter: blur(6px) contrast(120%);
+            position: absolute;
+            top: 30%;
+            right: 0;
+        }
+        .smoked-content--three{
+            width: 20%;
+            height: 40px;
+            border-radius: 100%;
+            background: linear-gradient(rgba(229, 140, 140, 0.2), rgba(247, 246, 246, .7));
+            /* background: linear-gradient(#fff, #999, #555, #888); */
+            filter: blur(6px) contrast(120%);
+            position: absolute;
+            bottom: 35px;
+            left: 0;
+        }
+        .smoked-content--four {
+            width: 100%;
+            height: 240px;
+            border-radius: 0 60% 0 0;
+            /* background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(218, 214, 214, 0.1), rgba(148, 148, 148, 0.1), rgba(136, 136, 136, .5)); */
+            background: linear-gradient(rgba(218, 214, 214, 0.8), rgba(100, 100, 100, 0.2), #f000, rgba(218, 214, 214, 0.8));
+            filter: blur(6px) contrast(120%);
+            position: absolute;
+            bottom: -400px;
+        }
     } 
 }
 
+/* 太陽光旋轉事件 */
 @keyframes sunlight {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* 調整這個值以改變上下浮動的距離 */
     }
 }
 /* flying-birds */
