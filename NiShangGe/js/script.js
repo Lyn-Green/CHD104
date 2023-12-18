@@ -1,40 +1,98 @@
 
 // nav 登入及註冊事件
-$(function(){
+// $(function(){
+//     let openBtn = $("#openBtn");
+//     let card = $(".card-login");
+//     let closeBtn = $("#closeBtn");
+//     let registerLink = $(".registerLink")
+//     let loginLink = $(".loginLink")
+//     let containerForm = $(".container-form")
+//     let navOpenBtn = $(".nav-bar-btn .openBtn button")
+
+
+//     $(openBtn).click(function(){
+//         $(card).addClass('show');
+//     })
+
+//     $(closeBtn).click(function(){
+//         $(card).removeClass('show');
+//     })
+
+
+//     $(registerLink).click(function(e){
+//         e.preventDefault();
+//         $(containerForm).addClass('active');
+//     })
+
+//     $(loginLink).click(function(e){
+//         e.preventDefault();
+//         $(containerForm).removeClass('active');
+//     })
+
+//     $(document).on('click', '.card-login.show', function(e){
+
+//         if (!$(e.target).closest('.container-form').length) {
+//             $(card).removeClass('show');
+//         }
+//     });
+// })
+
+
+$(function () {
     let openBtn = $("#openBtn");
+    let phoneNavOpenBtn = $(".phone-nav-bar .nav-bar-btn #openBtn");
     let card = $(".card-login");
     let closeBtn = $("#closeBtn");
-    let registerLink = $(".registerLink")
-    let loginLink = $(".loginLink")
-    let containerForm = $(".container-form")
+    let registerLink = $(".registerLink");
+    let loginLink = $(".loginLink");
+    let containerForm = $(".container-form");
 
-
-    $(openBtn).click(function(){
+    // 點擊一般的開啟按鈕
+    $(openBtn).click(function () {
         $(card).addClass('show');
-    })
+    });
 
-    $(closeBtn).click(function(){
+    // 點擊手機版的開啟按鈕
+    $(phoneNavOpenBtn).click(function () {
+        $(card).addClass('show');
+    });
+
+    // 點擊關閉按鈕
+    $(closeBtn).click(function () {
         $(card).removeClass('show');
-    })
+    });
 
-
-    $(registerLink).click(function(e){
+    // 點擊註冊連結
+    $(registerLink).click(function (e) {
         e.preventDefault();
         $(containerForm).addClass('active');
-    })
+    });
 
-    $(loginLink).click(function(e){
+    // 點擊登入連結
+    $(loginLink).click(function (e) {
         e.preventDefault();
         $(containerForm).removeClass('active');
-    })
+    });
 
-    $(document).on('click', '.card-login.show', function(e){
-        // Check if the clicked element is or is inside .container-form
+    // 點擊除卡片以外的區域關閉卡片
+    $(document).on('click', '.card-login.show', function (e) {
+        // 檢查點擊的元素是否在 .container-form 內部
         if (!$(e.target).closest('.container-form').length) {
             $(card).removeClass('show');
         }
     });
-})
+});
+
+
+
+
+
+
+
+
+
+
+
 
 //index-banner 煙霧效果
 const filter = document.querySelector("#turbulence");
@@ -58,5 +116,39 @@ function freqAnimation() {
 }
 
 window.requestAnimationFrame(freqAnimation);
+
+
+
+//index container 上移事件
+$(function(){
+    let showHeight = 300;
+
+    $("#index-area").css({
+        display: "block",
+        opacity: 0,
+    });
+
+    $(window).scroll(function(){
+        $("#index-area").each(function(){
+            let setThis = $(this);
+            let areaTop = setThis.offset().top;
+
+            if ($(window).scrollTop() + $(window).height() >= areaTop) {
+
+                setThis.stop().animate({
+                    opacity: 1,
+                }, 500);
+
+            } 
+            else {
+
+                setThis.stop().animate({
+                    opacity: 0,
+                }, 500);
+
+            }
+        })
+    })
+})
 
 
