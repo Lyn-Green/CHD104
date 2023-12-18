@@ -484,7 +484,7 @@ body {
     }
 
     @media ( width <= 768px ) {
-        /* margin-top: 330px; */
+        margin-top:30px;
     }
     @media ( width <= 450px ) {
         width: 100%;
@@ -809,12 +809,13 @@ body {
     @media ( width <= 1200px ) {
         /* top: 100px; */
     }
-    /* @media ( width <= 768px ) {
-        top: 2340px;
-    } */
+    @media ( width <= 768px ) {
+        top: 2640px;
+    }
     @media ( width <= 450px ) {
         background-size: cover;
         height: 100vw;
+        top: 1900px;
     } 
 
 }
