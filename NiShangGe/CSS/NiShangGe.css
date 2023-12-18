@@ -147,10 +147,10 @@ body {
     width: 100%;
     position: absolute;
     left: 100%;
-    animation: boating 60s linear infinite;
+    animation: boating 100s linear infinite;
 
     @media ( width <= 768px ) {
-        /* left: 70%; */
+        animation: boating 60s linear infinite;
     }
 
 }
@@ -162,6 +162,7 @@ body {
     }
 }
 
+/* 小木舟劇本 */
 @keyframes boating {
     0% {
         transform: translateX(0) rotate(10deg);
@@ -195,20 +196,24 @@ body {
 .index-banner span {
     display: inline-block;
     margin: auto 20px;
-    /* animation: floatUpDown 2s infinite ease-in-out; */
+    /* opacity: 0; */
+    /* animation: lateIn 2s ease-in-out; */
     /* background-color: #aaa; */
 }
 
 .index-banner span:nth-child(1) {
-    animation: floatUpDown 6s infinite;
+    animation: lateIn 2s ease-in-out, floatUpDown 6s infinite;
+
 }
 
 .index-banner span:nth-child(2) {
-    animation: floatUpDown 6.5s infinite;
+    animation: lateIn 3s ease-in-out, floatUpDown 6.5s infinite;
+
 }
 
 .index-banner span:nth-child(3) {
-    animation: floatUpDown 7s infinite;
+    animation: lateIn 4s ease-in-out, floatUpDown 7s infinite;
+
 }
 
 .index-banner span img {
@@ -229,7 +234,14 @@ body {
         transform: translateY(-10px); /* 調整這個值以改變上下浮動的距離 */
     }
 }
-
+@keyframes lateIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 /*煙霧效果*/
 .index-banner .smoked {
@@ -857,7 +869,7 @@ body {
 .newArrivals a {
     font-size: 22px;
     letter-spacing: 2px;
-    line-height: 50px;
+    line-height: 40px;
     text-decoration-color: #f000;
     color: #2B2B2B;
     transition: .5s;
@@ -871,6 +883,22 @@ body {
     }
 
     
+}
+.card-product {
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: #aaa; */
+
+    @media ( width <= 768px ) {
+        /* width: 47%; */
+    }
+    
+}
+.card-product .card_text {
+    @media ( width <= 768px ) {
+        margin-top: 1rem;
+        
+    }
 }
 
 
@@ -974,19 +1002,6 @@ body {
 
 }
 
-.card-product {
-    width: 80%;
-    margin: 0 auto;
-    /* background-color: #aaa; */
-
-    @media ( width <= 768px ) {
-        /* width: 47%; */
-    }
-    
-}
-.card-product .card_text {
-    margin-top: 1rem;
-}
 
 
 .card-product img {
