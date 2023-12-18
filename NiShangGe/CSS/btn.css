@@ -185,28 +185,7 @@
   margin-right: 5px;
 }
 
-.btn-to-next {
-  width: 100px;
-  height: 100%;
-  border: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: .5s ;
-  /* background-color: #fff; */
-}
-.btn-to-next i {
-  font-size: 50px;
-  color: #aaa;
-}
-.btn-to-next:hover {
-  width: 126px;
-  background-color: #2b2b2b;
-  border: none;
-}
-.btn-to-next:hover i {
-  color: #ddd;
-}
+
 
 
 
