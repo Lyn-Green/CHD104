@@ -9,37 +9,37 @@
 
   @media ( width <= 768px ) {
     margin-top: 20px;
-}
-
-  a {
-      width: 100%;
-      height: 80px;
-      border: 1px solid #bbb;
-      border-radius: 5px;
-      font-size: 20px;
-      color: #6F7170;
-      text-decoration: none;
-      text-align: center;
-      line-height: 80px;
-      display: inline-block;
-      vertical-align: middle;
-      background-color: #fff;
-      transition: .5s ;
   }
 
-  a:hover {
-    border-radius: 50px 0 50px 0;
-    color: #F8F8F8;
-    background-color: #2B2B2B;
-  }
-  img{
-      margin: 0;
-      width: 15px;
-      height: 15px;
-      vertical-align: middle;
-  }
 } 
 
+.btn_viewMore a {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #6F7170;
+  text-decoration: none;
+  text-align: center;
+  line-height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+  transition: .5s ;
+}
+
+.btn_viewMore a:hover {
+  border-radius: 50px 0 50px 0;
+  color: #F8F8F8;
+  background-color: #2B2B2B;
+}
+.btn_viewMore img{
+    margin: 0;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
 
 .btn_shop {
   width: 90%;

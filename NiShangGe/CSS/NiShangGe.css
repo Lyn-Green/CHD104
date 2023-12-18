@@ -18,6 +18,7 @@ body {
 
 .index-container {
     width: 100%;   
+    /* position: relative; */
 }
 .index-banner-img {
     width: 100%;
@@ -28,6 +29,13 @@ body {
     left: 0;
     top: 0;
     z-index: -1;
+
+    @media ( width <= 768px ) {
+        height: 100vw;
+    }
+    @media ( width <= 450px ) {
+        height: 130vw;
+    }
 }
 .index-banner{
     width: 100%;
@@ -37,10 +45,14 @@ body {
     overflow: hidden;
 
     @media ( width <= 768px ) {
-        height: 70vh;
+        height: 40vh;
     }
+        
+}
 
-    .banner {
+
+
+.index-banner .banner {
     width: 100%;
     height: 100vw;
     
@@ -48,179 +60,148 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
-
-
-        /* 太陽 */
-        .banner-deco-sun {
-            width: 100px;
-            height: 100px;
-            border-radius: 100%;
-            background-image: linear-gradient(to bottom, rgba(241,75,33, 1), rgba(241,75,33, 0.8));
-            filter: blur(3px);
-            position: absolute;
-            left: 8%;
-            top: 17px;
-
-
-            @media ( width <= 768px ) {
-                width: 5rem;
-                height: 5rem;
-                top: 10px;
-            }
-        }
-        /* 太陽光旋轉 */
-        .banner-deco-sunlight {
-            width: 110px;
-            height: 110px;
-            border-radius: 100%;
-            background-image: linear-gradient(to bottom, rgba(241,75,33, .8), rgba(241,75,33, 0.5));
-            filter: blur(10px);
-            position: absolute;
-            left: 7.5%;
-            top:20px;
-            animation: sunlight 3s linear infinite;
-
-
-            @media ( width <= 768px ) {
-                width: 5.5rem;
-                height: 5.5rem;
-                top:13px;
-            }
-        }
-
-        .word {
-            width: 40vw;
-            height: 20vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            left: 30%;
-            top: 13%;
-            /* background-color: #faa; */
-
-            @media ( width <= 768px ) {
-                /* width: 30vw; */
-            }
-
-            span {
-                display: inline-block;
-                margin: auto 20px;
-                /* animation: floatUpDown 2s infinite ease-in-out; */
-                /* background-color: #aaa; */
-            }
-
-            span:nth-child(1) {
-                animation: floatUpDown 6s infinite;
-            }
-            
-            /* 為 .word 中的第二個 span 應用第二個動畫，速度較快 */
-            span:nth-child(2) {
-                animation: floatUpDown 6.5s infinite;
-            }
-            
-            /* 為 .word 中的第三個 span 應用第一個動畫，速度較慢 */
-            span:nth-child(3) {
-                animation: floatUpDown 7s infinite;
-            }
-
-            span img {
-                @media ( width <= 768px ) {
-                    width: 4rem;
-                }
-            }
-        }
-
-        .smoked {
-            filter: url('#filter'); /*煙霧效果*/
-            display: flex;
-        }
-        .smoked-content--one {
-            width: 70%;
-            height: 80px;
-            border-radius: 100%;
-            background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(218, 214, 214, 0.1), rgba(148, 148, 148, 0.1), rgba(136, 136, 136, .5));
-            /* background: linear-gradient(#555, #999, #555, #888); */
-            filter: blur(6px) contrast(120%);
-            position: absolute;
-            bottom: -90px;
-
-            @media ( width <= 768px ) {
-                bottom: 0px;
-            }
-        }
-        .smoked-content--two{
-            width: 70%;
-            height: 140px;
-            border-radius: 50% 0 30% 10%;
-            background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(223, 223, 223, 0.1), rgba(194, 194, 194, 0.1), rgba(255, 255, 255, 0.6));
-            /* background: linear-gradient(#fff, #999, #555, #888); */
-            filter: blur(6px) contrast(120%);
-            position: absolute;
-            top: 30%;
-            right: 0;
-
-
-            @media ( width <= 768px ) {
-                top: 0;
-                height: 80px;
-            }
-            
-        }
-        .smoked-content--three{
-            width: 20%;
-            height: 40px;
-            border-radius: 100%;
-            background: linear-gradient(rgba(229, 140, 140, 0.2), rgba(247, 246, 246, .7));
-            /* background: linear-gradient(#fff, #999, #555, #888); */
-            filter: blur(6px) contrast(120%);
-            position: absolute;
-            bottom: 35px;
-            left: 0;
-
-            @media ( width <= 768px ) {
-                top: 3rem;
-
-                /* height: 80px; */
-                /* background: linear-gradient(#fff, #999, #555, #888); */
-            }
-        }
-        .smoked-content--four {
-            width: 100%;
-            height: 240px;
-            border-radius: 0 60% 0 0;
-            /* background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(218, 214, 214, 0.1), rgba(148, 148, 148, 0.1), rgba(136, 136, 136, .5)); */
-            background: linear-gradient(rgba(218, 214, 214, 0.6), rgba(146, 146, 146, 0.2), #f000, rgba(218, 214, 214, 0.8));
-            filter: blur(6px) contrast(120%);
-            position: absolute;
-            bottom: -430px;
-
-            @media ( width <= 1400px ) {
-                bottom: -500px;
-            }
-            @media ( width <= 1200px ) {
-                bottom: -400px;
-            }
-            @media ( width <= 768px ) {
-                bottom: -180px;
-                height: 150px;
-                /* height: 80px; */
-                /* background: linear-gradient(#fff, #999, #555, #888); */
-            }
-        }
-    } 
 }
 
-/* 太陽光旋轉事件 */
+.index-banner .banner-deco-sun {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom, rgba(241,75,33, 1), rgba(241,75,33, 0.8));
+    filter: blur(3px);
+    position: absolute;
+    left: 8%;
+    top: 17px;
+    animation: sunlight 10s linear infinite;
+
+
+    @media ( width <= 768px ) {
+        width: 5rem;
+        height: 5rem;
+        top: 10px;
+    }
+}
+
+.index-banner .banner-deco-sunlight {
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom, rgba(241,75,33, .8), rgba(241,75,33, 0.5));
+    filter: blur(10px);
+    position: absolute;
+    left: 7.5%;
+    top:20px;
+    animation: sunlight 10s linear infinite;
+
+
+    @media ( width <= 768px ) {
+        width: 5.5rem;
+        height: 5.5rem;
+        top:13px;
+    }
+}
+
+
+/* 太陽光旋轉劇本 */
 @keyframes sunlight {
-    from {
-        transform: rotate(0deg);
+    0%, 100%  {
+        transform: rotate(0deg) translateX(-15px); /* 初始位置，向左晃动2px */
     }
-    to {
-        transform: rotate(360deg);
+    50% {
+        transform: rotate(30deg) translateX(0px); /* 回到初始位置，向左晃动2px */
+    }
+    
+}
+
+.index-banner .banner-boat {
+    width: 100%;
+    /* height: 10vw; */
+    position: relative;
+    top: 28%;
+    /* left: 80%; */
+
+    @media ( width <= 768px ) {
+        top: 35%;
+    }
+
+}
+.index-banner .boat-img {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    animation: boating 60s linear infinite;
+
+    @media ( width <= 768px ) {
+        /* left: 70%; */
+    }
+
+}
+.index-banner .boat-img img {
+    width: 4rem;
+
+    @media ( width <= 450px ) {
+        width: 3rem;
     }
 }
 
+@keyframes boating {
+    0% {
+        transform: translateX(0) rotate(10deg);
+    }
+    100% {
+        transform: translateX(-100%) rotate(-10deg); 
+    }
+}
+
+.index-banner .word {
+    width: 40vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 30%;
+    top: 13%;
+    /* background-color: #faa; */
+
+    @media ( width <= 768px ) {
+        top: 17%;
+    }
+    @media ( width <= 450px ) {
+        display: none;
+    }
+
+    
+}
+
+.index-banner span {
+    display: inline-block;
+    margin: auto 20px;
+    /* animation: floatUpDown 2s infinite ease-in-out; */
+    /* background-color: #aaa; */
+}
+
+.index-banner span:nth-child(1) {
+    animation: floatUpDown 6s infinite;
+}
+
+.index-banner span:nth-child(2) {
+    animation: floatUpDown 6.5s infinite;
+}
+
+.index-banner span:nth-child(3) {
+    animation: floatUpDown 7s infinite;
+}
+
+.index-banner span img {
+    @media ( width <= 768px ) {
+        width: 4rem;
+    }
+    @media ( width <= 450px ) {
+        width: 3rem;
+    }
+}
+
+/* 文字上下浮動劇本 */
 @keyframes floatUpDown {
     0%, 100% {
         transform: translateY(0);
@@ -229,6 +210,105 @@ body {
         transform: translateY(-10px); /* 調整這個值以改變上下浮動的距離 */
     }
 }
+
+
+/*煙霧效果*/
+.index-banner .smoked {
+    filter: url('#filter');
+    display: flex;
+}
+.index-banner .smoked-content--one {
+    width: 70%;
+    height: 80px;
+    border-radius: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(218, 214, 214, 0.1), rgba(148, 148, 148, 0.1), rgba(167, 166, 166, 0.3));
+    /* background: linear-gradient(#555, #999, #555, #888); */
+    filter: blur(6px) contrast(120%);
+    position: absolute;
+    top: 0;
+    left: 30%;
+    /* animation: smoked 7s infinite; */
+
+    @media ( width <= 768px ) {
+        bottom: 0px;
+    }
+}
+.index-banner .smoked-content--two{
+    width: 70%;
+    height: 140px;
+    border-radius: 50% 0 30% 10%;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(223, 223, 223, 0.1), rgba(194, 194, 194, 0.1), rgba(255, 255, 255, 0.6));
+    /* background: linear-gradient(#fff, #999, #555, #888); */
+    filter: blur(6px) contrast(120%);
+    position: absolute;
+    top: 30%;
+    right: 0;
+
+
+    @media ( width <= 768px ) {
+        top: 0;
+        height: 80px;
+    }
+    
+}
+.index-banner .smoked-content--three{
+    width: 20%;
+    height: 40px;
+    border-radius: 100%;
+    background: linear-gradient(rgba(229, 140, 140, 0.2), rgba(247, 246, 246, .7));
+    /* background: linear-gradient(#000, #999, #555, #888); */
+    filter: blur(6px) contrast(120%);
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+
+    @media ( width <= 768px ) {
+        top: 3rem;
+
+        /* height: 80px; */
+        /* background: linear-gradient(#fff, #999, #555, #888); */
+    }
+}
+.index-banner .smoked-content--four {
+    width: 100%;
+    height: 240px;
+    border-radius: 0 60% 0 0;
+    /* background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(218, 214, 214, 0.1), rgba(148, 148, 148, 0.1), rgba(136, 136, 136, .5)); */
+    background: linear-gradient(rgba(218, 214, 214, 0.6), rgba(146, 146, 146, 0.2), #f000, rgba(218, 214, 214, 0.8));
+    filter: blur(6px) contrast(120%);
+    position: absolute;
+    bottom: -430px;
+
+    @media ( width <= 1400px ) {
+        bottom: -500px;
+    }
+    @media ( width <= 1200px ) {
+        bottom: -400px;
+    }
+    @media ( width <= 768px ) {
+        top: 35%;
+        height: 150px;
+
+    }
+    @media ( width <= 450px ) {
+        top: 53%;
+        height: 100px;
+
+    }
+}
+
+@keyframes smoked {
+    0%, 100% {
+        translateX(0);
+    }
+    50% {
+        transform: translateX(30px); 
+    }
+}
+
+
+
+
 /* flying-birds */
 .bird-cont .bird {
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg");
@@ -248,6 +328,10 @@ body {
     animation-duration: 0.9s;
     animation-delay: -0.75s;
 }
+.bird-cont .bird--three {
+    animation-duration: 0.8s;
+    animation-delay: -0.95s;
+}
 .bird-cont .bird-container {
     position: absolute;
     top: 23%;
@@ -265,8 +349,8 @@ body {
 }
 @media screen and (max-width: 576px) {
     .bird-cont .bird-container--one {
-        animation-duration: 6s;
-        animation-delay: 3s;
+        animation-duration: 8s;
+        animation-delay: 2s;
     }
 }
 .bird-cont .bird-container--two {
@@ -275,8 +359,18 @@ body {
 }
 @media screen and (max-width: 576px) {
     .bird-cont .bird-container--two {
-        animation-duration: 8s;
+        animation-duration: 12s;
         animation-delay: 3s;
+    }
+}
+.bird-cont .bird-container--three {
+    animation-duration: 17s;
+    animation-delay: 1s;
+}
+@media screen and (max-width: 576px) {
+    .bird-cont .bird-container--three {
+        animation-duration: 14s;
+        animation-delay: 5s;
     }
 }
 
@@ -337,6 +431,32 @@ body {
         transform: translateY(0vh) translateX(110vw) scale(0.45);
     }
 }  
+@keyframes fly-right-three {
+    0% {
+        transform: translateY(-3vh) translateX(-10vw) scale(0.5);
+    }
+    10% {
+        transform: translateY(0vh) translateX(10vw) scale(0.4);
+    }
+    20% {
+        transform: translateY(-4vh) translateX(30vw) scale(0.6);
+    }
+    30% {
+        transform: translateY(1vh) translateX(50vw) scale(0.45);
+    }
+    40% {
+        transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+    }
+    50% {
+        transform: translateY(0vh) translateX(90vw) scale(0.45);
+    }
+    51% {
+        transform: translateY(0vh) translateX(110vw) scale(0.45);
+    }
+    100% {
+        transform: translateY(0vh) translateX(110vw) scale(0.45);
+    }
+}  
 
 
 /* index 關於我們======================================= */
@@ -363,6 +483,7 @@ body {
 
 .card_aboutUs {
     width: 100%;
+    /* height: 50vw; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -372,23 +493,27 @@ body {
 
     @media ( width <= 768px ) {
         flex-direction: column;
+        height: 100vh;
     }
 
 
     .about_img {
         width: 50%;
-        /* background-color: #aaa; */
+        height: 40vw;
+        background: url("../tiny_pic/01.front/front_meet_bg.jpg")no-repeat;
+        background-size: cover;
+        /* background-color: #fff; */
 
         @media ( width <= 768px ) {
             width: 80%;
-            margin: 20px auto;
+            height: 60vw;
+            background-size: cover;
+        }
+        @media ( width <= 450px ) {
+            /* height: 100vw; */
         }
 
-        img {
-            width: 100%;
-            vertical-align: bottom;
-            border-radius: 5px;
-        }
+        
 
         
     }
@@ -437,16 +562,23 @@ body {
     text-align: center;
     /* background-color: #afa; */
 
-    span {
-        font-size: 26px;
-        color: #aaa;
-        letter-spacing: 10px;
 
-        @media ( width <= 1200px ) {
-            font-size: clamp( 22px, 2.166vw, 26px );
-        }
+    @media ( width <= 768px ) {
+        display: none;
     }
+}
 
+.title span {
+    font-size: 26px;
+    color: #aaa;
+    letter-spacing: 10px;
+
+    @media ( width <= 1200px ) {
+        font-size: clamp( 22px, 2.166vw, 26px );
+    }
+}
+
+.card_aboutUs .introduce .title {
     @media ( width <= 768px ) {
         display: none;
     }
@@ -462,25 +594,25 @@ body {
     }
 }
 
-.content {
+.introduce .content {
     width: 100%;
+}
 
-    p {
+.introduce .content p {
+    width: 90%;
+    margin: 10px auto;
+    /* padding: 35px; */
+    font-size: 18px;
+    line-height: 50px;
+    text-align: left;
+    /* background-color: #faa; */
+
+    @media ( width <= 1200px ) {
+        font-size: clamp( 18px, 1.666vw, 20px );
+    }
+    @media ( width <= 768px ) {
         width: 90%;
-        margin: 10px auto;
-        /* padding: 35px; */
-        font-size: 20px;
-        line-height: 50px;
-        text-align: left;
-        /* background-color: #faa; */
-    
-        @media ( width <= 1200px ) {
-            font-size: clamp( 18px, 1.666vw, 20px );
-        }
-        @media ( width <= 768px ) {
-            width: 80%;
-            margin: auto;
-        }
+        margin: auto;
     }
 }
 
@@ -646,31 +778,32 @@ body {
 /* index- 中間背景圖 */
 .middle_bg {
     width: 100%;
-    height: 90vh;
-    bottom: 100px;
+    height: 90vw;
+    /* bottom: 100px; */
     /* top: 1600px; */
-    top: 1880px;
+    /* top: 1880px; */
     left: 0;
-    background: url("../tiny_pic/01.front/front_middle_bg_1920v3.png")no-repeat;
+    background: url("../tiny_pic/01.front/front_middle_bg_1920v3.png") no-repeat;
     /* background-image: url("../tiny_pic/01.front/front_middle_bg_1920v3.png")no-repeat; */
-    background-attachment: fixed;
-    background-size: cover;
+
+    /* background-attachment: fixed; */
+    background-size: contain;
     position: absolute;
     z-index: -1;
 
-    @media ( width <= 1400px ) {
+    /* @media ( width <= 1400px ) {
         top: 1920px;
-    }
+    } */
     @media ( width <= 1200px ) {
-        top: 1800px;
+        /* top: 100px; */
     }
-    @media ( width <= 768px ) {
+    /* @media ( width <= 768px ) {
         top: 2340px;
-    }
+    } */
     @media ( width <= 450px ) {
-        top: 2170px;
-        /* background-size: a; */
-    }
+        background-size: cover;
+        height: 100vw;
+    } 
 
 }
 
