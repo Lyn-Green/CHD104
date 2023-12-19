@@ -827,7 +827,7 @@ body {
     @media ( width <= 450px ) {
         background-size: cover;
         height: 100vw;
-        top: 1900px;
+        top: 1950px;
     } 
 
 }
