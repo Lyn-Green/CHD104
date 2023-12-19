@@ -215,16 +215,21 @@
 
 .btn-trash {
   /* background-color: #070; */
+  
 }
 
 .btn-trash i {
   color: #555;
   font-size: 20px;
+  
   /* z-index: 2; */
   /* padding:0 0 0 250px; */
 
   @media ( width < 768px ) {
     font-size: clamp( 18px, 1.666vw, 20px );
+  }
+  @media ( width < 450px ) {
+    padding-top: 10px;
   }
 }
 
@@ -247,7 +252,7 @@
   font-size: 20px;
   color: #2B2B2B;
   text-align: center;
-  /* background-color: #f000; */
+  /* background-color: #faa; */
 
 
   @media ( width < 768px ) {
@@ -260,6 +265,10 @@
   border-radius: 5px 0 0 5px;
   /* background-color: #aaa; */
 
+  @media ( width < 450px ) {
+    width: 7px;
+  }
+
 }
 .btn-count input:nth-child(2) {
   background-color:#fff;
@@ -267,11 +276,15 @@
   width: 2.5rem;
 
   @media ( width < 450px ) {
-    width: 1.2rem;
+    width: 10px;
   }
 }
 .btn-count input:nth-child(3) {
   border-radius: 0 5px 5px 0;
+
+  @media ( width < 450px ) {
+    width: 7px;
+  }
 }
 
 

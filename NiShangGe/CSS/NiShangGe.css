@@ -1829,6 +1829,11 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+
+        margin: auto 30px;
+    }
+    @media ( width <= 450px ) {
+        margin: auto 10px;
     }
 }
 
@@ -3400,7 +3405,9 @@ body {
 
     }
 
-    .card input[type="text"] {
+    .card input[type="text"],
+    .card input[type="tel"],
+    .card input[type="email"] {
         font-size: 18px;
         border: 1px solid #555;
         border-color: #ddd;
